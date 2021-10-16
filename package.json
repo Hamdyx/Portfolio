@@ -1,12 +1,13 @@
 {
-  "name": "reactniceresume",
-  "version": "0.1.0",
+  "name": "cryptojoint",
+  "version": "0.2.0",
   "private": true,
   "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "animate.css": "^4.1.1",
     "anix": "^1.3.6",
     "jquery": "^3.6.0",
     "particles-bg": "^2.5.5",
