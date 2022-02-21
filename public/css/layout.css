@@ -32,7 +32,9 @@ body {
 
 header {
     position: relative;
-    height: 800px;
+    /* height: 800px; */
+    /* height: 1270px; */
+    height: 100vh;
     min-height: 500px;
     width: 100%;
 
@@ -47,6 +49,7 @@ header:before {
     vertical-align: middle;
     height: 100%;
 }
+
 header .banner {
     display: inline-block;
     vertical-align: middle;
@@ -715,8 +718,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-    background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center
-        center;
+    background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     background-attachment: fixed;
