@@ -4,11 +4,11 @@ import ParticlesBg from 'particles-bg';
 class Header extends Component {
     render() {
         if (!this.props.data) return null;
+        const { project, github, name, description } = this.props.data;
 
-        const project = this.props.data.project;
-        const github = this.props.data.github;
-        const name = this.props.data.name;
-        const description = this.props.data.description;
+        const routes = ['home', 'about', 'resume', 'portfolio', 'contact'];
+
+        const navBtns = routes.map((route) => <NavBtn key={route} route={route} />);
 
         return (
             <header id="home">
@@ -23,54 +23,16 @@ class Header extends Component {
                     </a>
 
                     <ul id="nav" className="nav">
-                        <li className="current">
-                            <a className="smoothscroll" href="#home">
-                                Home
-                            </a>
-                        </li>
-
-                        <li>
-                            <a className="smoothscroll" href="#about">
-                                About
-                            </a>
-                        </li>
-
-                        <li>
-                            <a className="smoothscroll" href="#resume">
-                                Resume
-                            </a>
-                        </li>
-
-                        <li>
-                            <a className="smoothscroll" href="#portfolio">
-                                Works
-                            </a>
-                        </li>
-
-                        <li>
-                            <a className="smoothscroll" href="#contact">
-                                Contact
-                            </a>
-                        </li>
+                        {navBtns}
                     </ul>
                 </nav>
 
                 <div className="row banner">
                     <div className="banner-text">
-                        {/* <Tada>
-                        </Tada> */}
-                        <h1 className="responsive-headline animate__animated animate__fadeInDown">
-                            {name}
-                        </h1>
-                        {/* <Fade bottom duration={1200}>
-                        </Fade> */}
-                        <h3 className="animate__animated animate__fadeInDown">
-                            {description}.
-                        </h3>
+                        <h1>{name}</h1>
+                        <h3>{description}.</h3>
                         <hr />
-                        {/* <Fade bottom duration={2000}>
-                        </Fade> */}
-                        <ul className="social animate__animated animate__fadeInUp">
+                        <ul className="social">
                             <a href={project} className="button btn project-btn">
                                 <i className="fa fa-book"></i>Project
                             </a>
@@ -90,5 +52,18 @@ class Header extends Component {
         );
     }
 }
+
+const NavBtn = ({ route }) => {
+    return (
+        <li className={route === 'home' ? 'current' : ''}>
+            <a href={`#${route}`} className="nav-btn smoothscroll">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> {route}
+            </a>
+        </li>
+    );
+};
 
 export default Header;

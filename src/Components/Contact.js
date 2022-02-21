@@ -3,13 +3,8 @@ class Contact extends Component {
     render() {
         if (!this.props.data) return null;
 
-        const name = this.props.data.name;
-        const street = this.props.data.address.street;
-        const city = this.props.data.address.city;
-        const state = this.props.data.address.state;
-        const zip = this.props.data.address.zip;
-        const phone = this.props.data.phone;
-        const message = this.props.data.contactmessage;
+        const { name, phone, address, contactmessage } = this.props.data;
+        const { city, country } = address;
 
         return (
             <section id="contact">
@@ -21,7 +16,7 @@ class Contact extends Component {
                     </div>
 
                     <div className="ten columns">
-                        <p className="lead">{message}</p>
+                        <p className="lead">{contactmessage}</p>
                     </div>
                 </div>
 
@@ -104,9 +99,7 @@ class Contact extends Component {
                             <p className="address">
                                 {name}
                                 <br />
-                                {/* {street} <br /> */}
-                                {city}
-                                {/* , {state} {zip} */}
+                                {`${city}, ${country}`}
                                 <br />
                                 <span>{phone}</span>
                             </p>
