@@ -17,6 +17,8 @@ class About extends Component {
                             className="profile-pic"
                             src={profilepic}
                             alt="Nordic Giant Profile Pic"
+                            width={120}
+                            height={120}
                         />
                     </div>
                     <div className="nine columns main-col">

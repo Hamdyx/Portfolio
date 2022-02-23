@@ -30,21 +30,21 @@ class Header extends Component {
                 <div className="row banner">
                     <div className="banner-text">
                         <h1>{name}</h1>
-                        <h3>{description}.</h3>
+                        <h2>{description}.</h2>
                         <hr />
-                        <ul className="social">
+                        <div className="social">
                             <a href={project} className="button btn project-btn">
                                 <i className="fa fa-book"></i>Project
                             </a>
                             <a href={github} className="button btn github-btn">
                                 <i className="fa fa-github"></i>Github
                             </a>
-                        </ul>
+                        </div>
                     </div>
                 </div>
 
                 <p className="scrolldown">
-                    <a className="smoothscroll" href="#about">
+                    <a className="smoothscroll" href="#about" aria-label="scroll-down">
                         <i className="icon-down-circle"></i>
                     </a>
                 </p>

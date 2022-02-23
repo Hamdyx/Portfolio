@@ -95,7 +95,7 @@ class Contact extends Component {
 
                     <aside className="four columns footer-widgets animate__animated animate__fadeInRight">
                         <div className="widget widget_contact">
-                            <h4>Address and Phone</h4>
+                            <h2>Address and Phone</h2>
                             <p className="address">
                                 {name}
                                 <br />

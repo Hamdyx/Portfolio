@@ -68,7 +68,7 @@ header .banner-text h1 {
     margin: 0 auto 18px auto;
     animation: fadeInDown 1.5s;
 }
-header .banner-text h3 {
+header .banner-text h2 {
     font: 18px/1.9em 'librebaskerville-regular', serif;
     color: #ddd;
     margin: 0 auto;
@@ -480,7 +480,8 @@ a:hover .liquid {
     border-bottom: 3px solid #0762f9;
     padding-bottom: 6px;
 }
-#resume h3 {
+#resume h3,
+#resume h2 {
     font: 25px/30px 'opensans-bold', sans-serif;
 }
 
@@ -1120,7 +1121,8 @@ call-to-action .button {
     color: #ebeeee;
 }
 
-#contact h4 {
+#contact h4,
+#contact h2 {
     font: 16px/24px 'opensans-bold', sans-serif;
     color: #ebeeee;
     margin-bottom: 6px;

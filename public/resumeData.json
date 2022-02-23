@@ -2,7 +2,7 @@
   "main": {
     "name":"Ahmed Hamdy",
     "description":"Javascript Developer",
-    "image":"pp.png",
+    "image":"profilePic.webp",
     "bio":"Passionate Javascript developer with over 3 years of front-end experience building responsive web apps using React, Redux and Bootstrap, in addition to 1 year of web development experience using MERN stack.",
     "contactmessage":"Let's get in touch if you want to implement something or just want to DEDUCK",
     "email": "a.hamdy.nig@gmail.com",
@@ -136,75 +136,75 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"project-1.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"To Do List",
+        "category":"(offline now) My to-do-list App for tracking tasks and sorting them in categories",
+        "image":"portfolio-1.webp",
+        "url":"https://github.com/Hamdyx/DailyTasks"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Budgety",
+        "category":"(offline now) A budget management app",
+        "image":"portfolio-2.webp",
+        "url":"https://github.com/Hamdyx/Budgety"
       },
       {
         "title":"Original Thai Food",
         "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
+        "image":"portfolio-1.webp",
         "url":"http://www.timbakerdev.com/originalthaifood.github.io"
       },
       {
         "title":"Resume Website",
         "category":"A React based resume website template",
-        "image":"04.jpg",
+        "image":"portfolio-1.webp",
         "url":"http://www.timbakerdev.com"
       },
       {
         "title":"Smirkspace",
         "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
+        "image":"portfolio-1.webp",
         "url":"http://www.smirkspace.com"
       },
       {
         "title":"Canadian Wanderlust",
         "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
+        "image":"portfolio-1.webp",
         "url":"https://www.canadianwanderlust.com"
       },
       {
         "title":"Fury Fighting Gear",
         "category":"(offline now) A fighting gear company I started",
-        "image":"01.jpg",
+        "image":"portfolio-1.webp",
         "url":"http://www.timbakerdev.com"
       },
       {
         "title":"Original Thai Food",
         "category":"Website I built for a restaurant I like in Thailand",
-        "image":"02.jpg",
+        "image":"portfolio-1.webp",
         "url":"http://www.timbakerdev.com/originalthaifood.github.io"
       },
       {
         "title":"Original Thai Food",
         "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
+        "image":"portfolio-1.webp",
         "url":"http://www.timbakerdev.com/originalthaifood.github.io"
       },
       {
         "title":"Resume Website",
         "category":"A React based resume website template",
-        "image":"04.jpg",
+        "image":"portfolio-1.webp",
         "url":"http://www.timbakerdev.com"
       },
       {
         "title":"Smirkspace",
         "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
+        "image":"portfolio-1.webp",
         "url":"http://www.smirkspace.com"
       },
       {
         "title":"Canadian Wanderlust",
         "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
+        "image":"portfolio-1.webp",
         "url":"https://www.canadianwanderlust.com"
       }
     ]
