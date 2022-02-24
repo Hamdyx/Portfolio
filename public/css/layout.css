@@ -521,6 +521,14 @@ a:hover .liquid {
     margin-bottom: 18px;
     margin-top: 9px;
 }
+
+#resume .details {
+    /* font: 16px/24px 'librebaskerville-italic', serif; */
+    color: #6e7881;
+    /* margin-bottom: 18px; */
+    /* margin-top: 9px; */
+}
+
 #resume .info span {
     margin-right: 5px;
     margin-left: 5px;
@@ -688,6 +696,11 @@ a:hover .liquid {
     background: #fff;
     overflow: hidden;
     position: relative;
+
+    /* font: 16px/24px 'librebaskerville-italic', serif; */
+    color: #6e7881;
+    /* margin-bottom: 18px;
+    margin-top: 9px; */
 
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -1092,7 +1105,8 @@ call-to-action .button {
     background: #191919;
     padding-top: 96px;
     padding-bottom: 102px;
-    color: #636363;
+    color: #bebebe;
+    /* color: #636363; */
 }
 #contact .section-head {
     margin-bottom: 42px;
@@ -1253,18 +1267,18 @@ footer {
 
 footer a,
 footer a:visited {
-    color: #525252;
+    color: rgb(191, 191, 191);
 }
 footer a:hover,
 footer a:focus {
     color: var(--baseOrange);
-    /* color: #fff; */
 }
 
 /* copyright */
 footer .copyright {
     margin: 0;
     padding: 0;
+    color: #808080;
 }
 footer .copyright li {
     display: inline-block;
