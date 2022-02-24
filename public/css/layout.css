@@ -21,6 +21,11 @@
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
+:root {
+    --baseOrange: #fe6928;
+    --baseOrangeHovered: #fe6a2abf;
+    --baseGrey: #343a40;
+}
 
 body {
     background: #0f0f0f;
@@ -200,12 +205,10 @@ ul#nav li a:active {
     background-color: transparent !important;
 }
 ul#nav li.current a {
-    color: #fe6928;
+    color: var(--baseOrange);
 }
 ul#nav li a:hover {
-    color: #fe6928;
-    /* animation: borderAnimation;
-    animation-duration: 2s; */
+    color: var(--baseOrange);
 }
 
 @keyframes borderAnimation {
@@ -327,7 +330,8 @@ a.nav-btn:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-
 /* ------------------------------------------------------------------ */
 
 #about {
-    background: #000524;
+    background: var(--baseGrey);
+    /* background: #000524; */
     padding-top: 96px;
     padding-bottom: 66px;
     overflow: hidden;
@@ -389,6 +393,7 @@ a.button-liquid {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 600;
     overflow: hidden;
     border-radius: 40px;
     border: none;
@@ -396,9 +401,9 @@ a.button-liquid {
 
 a.button-liquid span {
     position: relative;
-    color: #fff;
+    color: #000;
     font-family: Arial;
-    letter-spacing: 0.25rem;
+    letter-spacing: 3px;
     z-index: 1;
 }
 
@@ -427,7 +432,8 @@ a .liquid::before {
 
 a .liquid::before {
     border-radius: 45%;
-    background: rgba(20, 20, 20, 1);
+    background: #141414bf;
+    /* background: rgba(20, 20, 20, 1); */
     animation: animate 5s linear infinite;
 }
 
@@ -670,7 +676,8 @@ a:hover .liquid {
     letter-spacing: 1px;
     text-align: center;
     margin-bottom: 48px;
-    color: #95a3a3;
+    color: var(--baseGrey);
+    /* color: #95a3a3; */
 }
 
 /* Portfolio Content */
@@ -1170,7 +1177,7 @@ call-to-action .button {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #fff;
-    background: #0d0d0d;
+    background: #525252;
     border: none;
     cursor: pointer;
     height: auto;
@@ -1180,7 +1187,7 @@ call-to-action .button {
 }
 #contact button.submit:hover {
     color: #0d0d0d;
-    background: #fff;
+    background: var(--baseOrange);
 }
 #contact span.required {
     color: #0762f9;
@@ -1250,7 +1257,8 @@ footer a:visited {
 }
 footer a:hover,
 footer a:focus {
-    color: #fff;
+    color: var(--baseOrange);
+    /* color: #fff; */
 }
 
 /* copyright */
@@ -1323,6 +1331,7 @@ footer .social-links li:first-child {
 }
 #go-top a:hover {
     background-color: #fe6928;
+    color: #0d0d0d;
 }
 
 .social .btn:first-child {
@@ -1336,7 +1345,8 @@ footer .social-links li:first-child {
     margin-right: 15px;
 }
 .btn.project-btn {
-    background-color: #fe6928;
+    background-color: var(--baseOrange);
+    color: #000;
 }
 .btn.github-btn {
     background-color: #34495e;

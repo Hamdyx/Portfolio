@@ -11,6 +11,7 @@
             content="Javascript developer with front-end experience building responsive web apps using React, Redux and Bootstrap, in addition to web development known as MERN stack."
         />
         <meta name="theme-color" content="#000000" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
         <link rel="stylesheet" href="%PUBLIC_URL%/css/default.css" />
@@ -25,8 +26,14 @@
         <noscript> You need to enable JavaScript to run this app. </noscript>
         <div id="root"></div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- jquery@2.2.4 has vulnerableties -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <!-- jquery@1.12.4 has vulnerableties -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
         <!-- jquery@1.10.2 has vulnerableties -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
         <!-- <script>
             window.jQuery ||
                 document.write('<script src="js/jquery-1.10.2.min.js"><\/script>');
