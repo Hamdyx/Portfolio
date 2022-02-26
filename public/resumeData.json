@@ -137,13 +137,13 @@
     "projects": [
       {
         "title":"To Do List",
-        "category":"(offline now) My to-do-list App for tracking tasks and sorting them in categories",
+        "details":"(offline now) My to-do-list App for tracking tasks and sorting them in categories",
         "image":"portfolio-1.webp",
         "url":"https://github.com/Hamdyx/DailyTasks"
       },
       {
         "title":"Budgety",
-        "category":"(offline now) A budget management app",
+        "details":"(offline now) A budget management app",
         "image":"portfolio-2.webp",
         "url":"https://github.com/Hamdyx/Budgety"
       }
