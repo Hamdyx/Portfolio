@@ -1026,6 +1026,7 @@ call-to-action .button {
 /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides > li {
     display: none;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
 /* Suggested container for slide animation setups. Can replace this with your own */
@@ -1164,7 +1165,7 @@ call-to-action .button {
     font: 15px/24px 'opensans-bold', sans-serif;
     margin: 12px 0;
     color: #ebeeee;
-    display: inline-block;
+    display: block;
     float: left;
     width: 26%;
 }
@@ -1189,8 +1190,8 @@ call-to-action .button {
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
-    color: #fff;
-    background-color: #0762f9;
+    color: #000000;
+    background-color: #ebeeee;
 }
 #contact button.submit {
     text-transform: uppercase;

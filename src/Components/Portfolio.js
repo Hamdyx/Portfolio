@@ -15,8 +15,8 @@ class Portfolio extends Component {
                         <Zmage
                             alt={projects.title}
                             src={projectImage}
-                            width={215}
-                            height={120}
+                            width="100%"
+                            height="100%"
                         />
                         <div style={{ textAlign: 'center' }}>{projects.title}</div>
                     </div>
