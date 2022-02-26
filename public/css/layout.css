@@ -1181,6 +1181,11 @@ call-to-action .button {
     line-height: 24px;
     width: 65%;
 }
+/* @bug textarea breaks the layout when resized horizontally more than col width  */
+#contact textarea {
+    /* @fix prevent textarea from stretching in width */
+    resize: vertical;
+}
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
