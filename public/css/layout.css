@@ -74,7 +74,7 @@ header .banner-text h1 {
     animation: fadeInDown 1.5s;
 }
 header .banner-text h2 {
-    font: 18px/1.9em 'librebaskerville-regular', serif;
+    font: 25px/2.15em 'librebaskerville-regular', serif;
     color: #ddd;
     margin: 0 auto;
     width: 70%;
@@ -105,9 +105,6 @@ header .social li {
 }
 header .social li a {
     color: #fff;
-}
-header .social li a:hover {
-    color: #0762f9;
 }
 
 /* scrolldown link */

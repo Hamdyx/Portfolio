@@ -35,11 +35,6 @@
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"https://instagram.com",
-        "className":"fa fa-instagram"
-      },
-      {
         "name":"github",
         "url":"https://github.com/Hamdyx",
         "className":"fa fa-github"

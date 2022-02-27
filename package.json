@@ -1,6 +1,6 @@
 {
-  "name": "cryptojoint",
-  "version": "0.2.0",
+  "name": "personal-portfolio",
+  "version": "1.0.0",
   "private": true,
   "homepage": "./",
   "dependencies": {

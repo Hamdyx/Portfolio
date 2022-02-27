@@ -1,11 +1,6 @@
 jQuery(document).ready(function ($) {
     var time = 380;
     setTimeout(function () {
-        $('h1.responsive-headline').fitText(1, {
-            minFontSize: '40px',
-            maxFontSize: '90px',
-        });
-
         $('.smoothscroll').on('click', function (e) {
             e.preventDefault();
             var target = this.hash,
@@ -65,18 +60,6 @@ jQuery(document).ready(function ($) {
                     nav.addClass('opaque').fadeIn('fast');
                 }
             }
-        });
-
-        $('.flexslider').flexslider({
-            namespace: 'flex-',
-            controlsContainer: '.flex-container',
-            animation: 'slide',
-            controlNav: true,
-            directionNav: false,
-            smoothHeight: true,
-            slideshowSpeed: 7000,
-            animationSpeed: 600,
-            randomize: false,
         });
 
         $('form#contactForm button.submit').click(function () {

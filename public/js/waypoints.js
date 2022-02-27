@@ -90,7 +90,8 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/GPL-license.txt
                         }
                     }, this)
                 );
-            e.load(
+            e.on(
+                'load',
                 $.proxy(function () {
                     this.doScroll();
                 }, this)
@@ -254,7 +255,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/GPL-license.txt
         }
     };
     $[m].settings = { resizeThrottle: 200, scrollThrottle: 100 };
-    e.load(function () {
+    e.on('load', function () {
         $[m]('refresh');
     });
 })(jQuery, 'waypoint', 'waypoints', window);

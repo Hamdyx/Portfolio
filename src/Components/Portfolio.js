@@ -1,5 +1,4 @@
 import React, { Component, useState } from 'react';
-import Zmage from 'react-zmage';
 import { Button, Figure, Image, Modal } from 'react-bootstrap';
 
 let id = 0;
@@ -29,11 +28,6 @@ class Portfolio extends Component {
         );
     }
 }
-
-// @bug Zmage
-// when img is in full-screen then closed
-// it leaves a figue div with z-index 1000
-// @fix replaced Zmage with bootstrap modal
 
 const ProjectModal = ({ project }) => {
     const [show, setShow] = useState(false);

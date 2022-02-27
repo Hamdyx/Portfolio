@@ -4,7 +4,16 @@ import ParticlesBg from 'particles-bg';
 class Header extends Component {
     render() {
         if (!this.props.data) return null;
-        const { project, github, name, description } = this.props.data;
+        const { name, description, social } = this.props.data;
+        const networks = social.map(function (network) {
+            return (
+                <li key={network.name}>
+                    <a href={network.url} aria-label={network.name}>
+                        <i className={network.className}></i>
+                    </a>
+                </li>
+            );
+        });
 
         const routes = ['home', 'about', 'resume', 'portfolio', 'contact'];
 
@@ -32,14 +41,7 @@ class Header extends Component {
                         <h1>{name}</h1>
                         <h2>{description}.</h2>
                         <hr />
-                        <div className="social">
-                            <a href={project} className="button btn project-btn">
-                                <i className="fa fa-book"></i>Project
-                            </a>
-                            <a href={github} className="button btn github-btn">
-                                <i className="fa fa-github"></i>Github
-                            </a>
-                        </div>
+                        <ul className="social">{networks}</ul>
                     </div>
                 </div>
 

@@ -16,6 +16,19 @@
     background: #fff;
 }
  */
+/* Header override */
+header .social li a:hover {
+    color: var(--baseOrange);
+}
+
+header .social li:hover {
+    animation: flip 1s;
+}
+/* Footer override */
+footer .social-links li:hover {
+    color: var(--baseOrange);
+    animation: flip 1s;
+}
 
 .portfolioImg-btn {
     width: 100%;
