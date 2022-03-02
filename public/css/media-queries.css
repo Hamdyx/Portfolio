@@ -184,9 +184,9 @@
     }
 
     ul#nav li a {
-        display: block;
+        display: inline-block;
         margin: 0;
-        padding: 0;
+        padding: 2rem;
         margin: 12px 0;
         line-height: 16px; /* reset line-height from 48px */
         border: none;
