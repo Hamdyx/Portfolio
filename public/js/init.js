@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function ($) { // on('ready', ()) won't work with jQuery(document)
     var time = 380;
     setTimeout(function () {
         $('.smoothscroll').on('click', function (e) {

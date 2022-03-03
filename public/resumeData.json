@@ -80,7 +80,7 @@
     "skills":[
       {
         "name":"Javascript",
-        "level":"80%"
+        "level":"90%"
       },
       {
         "name":"React.js",
@@ -132,7 +132,7 @@
     "projects": [
       {
         "title":"To Do List",
-        "details":"(offline now) My to-do-list App for tracking tasks and sorting them in categories",
+        "details":"(offline now) To-do-list App for tracking tasks and sorting them in categories",
         "image":"portfolio-1.webp",
         "url":"https://github.com/Hamdyx/DailyTasks"
       },
@@ -141,6 +141,12 @@
         "details":"(offline now) A budget management app",
         "image":"portfolio-2.webp",
         "url":"https://github.com/Hamdyx/Budgety"
+      },
+      {
+        "title":"Weather-App",
+        "details":"(offline now) A Weather-App implemented in react.js, node.js and used chaka UI for styles",
+        "image":"portfolio-3.webp",
+        "url":"https://github.com/Hamdyx/Weather-App"
       }
     ]
   }
