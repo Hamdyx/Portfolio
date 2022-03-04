@@ -1,44 +1,80 @@
-import React, { Component } from "react";
-import Zmage from "react-zmage";
-import Fade from "react-reveal";
+import React, { Component, useState } from 'react';
+import { Button, Figure, Image, Modal } from 'react-bootstrap';
 
 let id = 0;
 class Portfolio extends Component {
-  render() {
-    if (!this.props.data) return null;
+    render() {
+        if (!this.props.data) return null;
 
-    const projects = this.props.data.projects.map(function (projects) {
-      let projectImage = "images/portfolio/" + projects.image;
+        const projectsDev = this.props.data.projects.map((project, i) => {
+            return <ProjectModal key={i} project={project} />;
+        });
 
-      return (
-        <div key={id++} className="columns portfolio-item">
-          <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
-            <div style={{ textAlign: "center" }}>{projects.title}</div>
-          </div>
-        </div>
-      );
-    });
+        return (
+            <section id="portfolio">
+                <div className="row animate__animated animate__fadeInLeft">
+                    <div className="twelve columns collapsed">
+                        <h1>Check Out Some of My Works.</h1>
+
+                        <div
+                            id="portfolio-wrapper"
+                            className="bgrid-quarters s-bgrid-thirds cf"
+                        >
+                            {projectsDev}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+    }
+}
+
+const ProjectModal = ({ project }) => {
+    const [show, setShow] = useState(false);
+    const { title, details, image } = project;
+    let projectImage = 'images/portfolio/' + image;
+
+    const handleModalShow = () => setShow(true);
+
+    const handleModalClose = () => setShow(false);
 
     return (
-      <section id="portfolio">
-        <Fade left duration={1000} distance="40px">
-          <div className="row">
-            <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
-
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
-                {projects}
-              </div>
+        <div key={id++} className="columns portfolio-item">
+            <div className="item-wrap">
+                <Figure>
+                    <Button className="portfolioImg-btn" onClick={handleModalShow}>
+                        <Figure.Image
+                            src={projectImage}
+                            alt={title}
+                            width="100%"
+                            height="100%"
+                        />
+                    </Button>
+                    <Figure.Caption style={{ textAlign: 'center' }}>
+                        {project.title}
+                    </Figure.Caption>
+                    <Modal
+                        show={show}
+                        onHide={handleModalClose}
+                        className="project-modal"
+                    >
+                        <Modal.Header closeButton>
+                            <Modal.Title>{project.title}</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                            <Image
+                                src={projectImage}
+                                alt={title}
+                                width="75%"
+                                height="50%"
+                            />
+                            <p>{details}</p>
+                        </Modal.Body>
+                    </Modal>
+                </Figure>
             </div>
-          </div>
-        </Fade>
-      </section>
+        </div>
     );
-  }
-}
+};
 
 export default Portfolio;
