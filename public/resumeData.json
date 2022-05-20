@@ -1,153 +1,159 @@
 {
-  "main": {
-    "name":"Ahmed Hamdy",
-    "description":"Javascript Developer",
-    "image":"profilePic.webp",
-    "bio":"Passionate Javascript developer with over 3 years of front-end experience building responsive web apps using React, Redux and Bootstrap, in addition to 1 year of web development experience using MERN stack.",
-    "contactmessage":"Let's get in touch if you want to implement something or just want to DEDUCK",
-    "email": "a.hamdy.nig@gmail.com",
-    "phone": "01116535636",
-    "github":"https://github.com/Hamdyx",
-    "project":"https://github.com/Hamdyx",
-    "address":{
-      "country":"Egypt",
-      "street":"(Your Street)",
-      "city":"Cairo",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+    "main": {
+        "name": "Ahmed Hamdy",
+        "description": "Javascript Developer",
+        "image": "profilePic.webp",
+        "bio": "Passionate Javascript developer with over 3 years of front-end experience building responsive web apps using React, Redux and Bootstrap, in addition to 1 year of web development experience using MERN stack.",
+        "contactmessage": "Let's get in touch if you want to implement something or just want to DEDUCK",
+        "email": "a.hamdy.nig@gmail.com",
+        "phone": "01116535636",
+        "github": "https://github.com/Hamdyx",
+        "project": "https://github.com/Hamdyx",
+        "address": {
+            "country": "Egypt",
+            "street": "(Your Street)",
+            "city": "Cairo",
+            "state": "(Your State)",
+            "zip": "(Your Zip/Postal Code)"
+        },
+        "website": "http://www.timbakerdev.com",
+        "resumedownload": "myCV.pdf",
+        "social": [
+            {
+                "name": "facebook",
+                "url": "https://facebook.com/a.hamdy.jsx",
+                "className": "fa fa-facebook"
+            },
+            {
+                "name": "twitter",
+                "url": "https://twitter.com/ma_niguh",
+                "className": "fa fa-twitter"
+            },
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/hamdyx/",
+                "className": "fa fa-linkedin"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/Hamdyx",
+                "className": "fa fa-github"
+            }
+        ]
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"myCV.pdf",
-    "social":[
-      {
-        "name":"facebook",
-        "url":"https://facebook.com/a.hamdy.jsx",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"https://twitter.com/ma_niguh",
-        "className":"fa fa-twitter"
-      },
-      {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/hamdyx/",
-        "className":"fa fa-linkedin"
-      },
-      {
-        "name":"github",
-        "url":"https://github.com/Hamdyx",
-        "className":"fa fa-github"
-      }
-    ]
-  },
-  "resume":{
-    "skillmessage":"Very comfortable working with Javascript, React.js, Express.js and Bootstrap, also sharpening my skills with MongoDB, Node.js, Blockchain and python",
-    "education":[
-      {
-        "school":"British University In Egypt",
-        "degree":"Bachelor in Computer Science",
-        "graduated":"2020",
-        "description":"Gathered strong knowledge about OOP and databases, also ranked first in the class of problem solving during year one"
-      }
-    ],
-    "work":[
-      {
-        "company":"Right-Click Media",
-        "title":"Digital Marketing Specialist",
-        "years":"Jan 2020 - June 2020",
-        "description":"Reached high percentage of potential clients turned to actual deals close to 75%. Upgraded SEO plan to be more appealing and efficient"
-      },
-      {
-        "company":"TraviGuide",
-        "title":"Sales Rep.",
-        "years":"Aug 2019 - Jan 2020",
-        "description":"Reached monthly bonus target twice. Achieved weekly incentive 8 times"
-      },
-      {
-        "company":"Teleperformance",
-        "title":"Customer Service Rep.",
-        "years":"Nov 2017 - Aug 2019",
-        "description":"Top achiever on the floor with customer satisfaction rate over 88% for 3 consecutive months once on Expedia Canada account and once on Freedom Canada. Helped the new trainees getting familiar with different scenarios"
-      },
-      {
-        "company":"Business Travel Management",
-        "title":"Sales Rep.",
-        "years":"May 2017 - Nov 2017",
-        "description":"Achieved monthly bonus twice. Assisted the support agent through reservation change or cancellation"
-      }
-    ],
-    "skills":[
-      {
-        "name":"Javascript",
-        "level":"90%"
-      },
-      {
-        "name":"React.js",
-        "level":"80%"
-      },
-      {
-        "name":"Redux.js",
-        "level":"75%"
-      },
-      {
-        "name":"Express.js",
-        "level":"75%"
-      },
-      {
-        "name":"Node.js",
-        "level":"50%"
-      },
-      {
-        "name":"MongoDb",
-        "level":"40%"
-      },
-      {
-        "name":"Solidity",
-        "level":"40%"
-      },
-      {
-        "name":"Blockchain",
-        "level":"40%"
-      },
-      {
-        "name":"Truffle",
-        "level":"40%"
-      },
-      {
-        "name":"Python",
-        "level":"50%"
-      },
-      {
-        "name":"Bootstrap",
-        "level":"90%"
-      },
-      {
-        "name":"CSS",
-        "level":"80%"
-      }
-    ]
-  },
-  "portfolio":{
-    "projects": [
-      {
-        "title":"To Do List",
-        "details":"(offline now) To-do-list App for tracking tasks and sorting them in categories",
-        "image":"portfolio-1.webp",
-        "url":"https://github.com/Hamdyx/DailyTasks"
-      },
-      {
-        "title":"Budgety",
-        "details":"(offline now) A budget management app",
-        "image":"portfolio-2.webp",
-        "url":"https://github.com/Hamdyx/Budgety"
-      },
-      {
-        "title":"Weather-App",
-        "details":"(offline now) A Weather-App implemented in react.js, node.js and used chaka UI for styles",
-        "image":"portfolio-3.webp",
-        "url":"https://github.com/Hamdyx/Weather-App"
-      }
-    ]
-  }
+    "resume": {
+        "skillmessage": "Very comfortable working with Javascript, React.js, Express.js and Bootstrap, also sharpening my skills with MongoDB, Node.js, Blockchain and python",
+        "education": [
+            {
+                "school": "British University In Egypt",
+                "degree": "Bachelor in Computer Science",
+                "graduated": "2020",
+                "description": "Gathered strong knowledge about OOP and databases, also ranked first in the class of problem solving during year one"
+            }
+        ],
+        "work": [
+            {
+                "company": "Uniparticle",
+                "title": "Front-End Developer",
+                "years": "Apr 2022 - Present",
+                "description": "Worked in an agile environment, with weekly meetings and sprint planning. Developed various projects from UI designs to React"
+            },
+            {
+                "company": "Right-Click Media",
+                "title": "Digital Marketing Specialist",
+                "years": "Jan 2020 - June 2020",
+                "description": "Reached high percentage of potential clients turned to actual deals close to 75%. Upgraded SEO plan to be more appealing and efficient"
+            },
+            {
+                "company": "TraviGuide",
+                "title": "Sales Rep.",
+                "years": "Aug 2019 - Jan 2020",
+                "description": "Reached monthly bonus target twice. Achieved weekly incentive 8 times"
+            },
+            {
+                "company": "Teleperformance",
+                "title": "Customer Service Rep.",
+                "years": "Nov 2017 - Aug 2019",
+                "description": "Top achiever on the floor with customer satisfaction rate over 88% for 3 consecutive months once on Expedia Canada account and once on Freedom Canada. Helped the new trainees getting familiar with different scenarios"
+            },
+            {
+                "company": "Business Travel Management",
+                "title": "Sales Rep.",
+                "years": "May 2017 - Nov 2017",
+                "description": "Achieved monthly bonus twice. Assisted the support agent through reservation change or cancellation"
+            }
+        ],
+        "skills": [
+            {
+                "name": "Javascript",
+                "level": "90%"
+            },
+            {
+                "name": "React.js",
+                "level": "80%"
+            },
+            {
+                "name": "Redux.js",
+                "level": "75%"
+            },
+            {
+                "name": "Express.js",
+                "level": "75%"
+            },
+            {
+                "name": "Node.js",
+                "level": "50%"
+            },
+            {
+                "name": "MongoDb",
+                "level": "40%"
+            },
+            {
+                "name": "Solidity",
+                "level": "40%"
+            },
+            {
+                "name": "Blockchain",
+                "level": "40%"
+            },
+            {
+                "name": "Truffle",
+                "level": "40%"
+            },
+            {
+                "name": "Python",
+                "level": "50%"
+            },
+            {
+                "name": "Bootstrap",
+                "level": "90%"
+            },
+            {
+                "name": "CSS",
+                "level": "80%"
+            }
+        ]
+    },
+    "portfolio": {
+        "projects": [
+            {
+                "title": "To Do List",
+                "details": "(offline now) To-do-list App for tracking tasks and sorting them in categories",
+                "image": "portfolio-1.webp",
+                "url": "https://github.com/Hamdyx/DailyTasks"
+            },
+            {
+                "title": "Budgety",
+                "details": "(offline now) A budget management app",
+                "image": "portfolio-2.webp",
+                "url": "https://github.com/Hamdyx/Budgety"
+            },
+            {
+                "title": "Weather-App",
+                "details": "(offline now) A Weather-App implemented in react.js, node.js and used chaka UI for styles",
+                "image": "portfolio-3.webp",
+                "url": "https://github.com/Hamdyx/Weather-App"
+            }
+        ]
+    }
 }
