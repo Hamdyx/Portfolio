@@ -54,21 +54,21 @@
         "work": [
             {
                 "company": "Taqneen",
-                "title": "Front-End Developer",
+                "title": "Senior Front-End Developer",
                 "years": "Jul 2022 - Present",
                 "description": "Worked with JSON objects, Typescript and Redux forms intensivly to create interactive web pages"
             },
             {
                 "company": "Uniparticle",
-                "title": "Front-End Developer",
+                "title": "Junior Front-End Developer",
                 "years": "Apr 2022 - Jul 2022",
                 "description": "Worked in an agile environment, with weekly meetings and sprint planning. Developed various projects from UI designs to React"
             },
             {
                 "company": "Right-Click Media",
-                "title": "Digital Marketing Specialist",
+                "title": "Junior Front-End Developer",
                 "years": "Jan 2020 - June 2020",
-                "description": "Reached high percentage of potential clients turned to actual deals close to 75%. Upgraded SEO plan to be more appealing and efficient"
+                "description": "Improved site performance by optimizing images and reducing requests when possible"
             },
             {
                 "company": "TraviGuide",
