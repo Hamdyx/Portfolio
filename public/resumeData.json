@@ -53,9 +53,15 @@
         ],
         "work": [
             {
+                "company": "Taqneen",
+                "title": "Front-End Developer",
+                "years": "Jul 2022 - Present",
+                "description": "Worked with JSON objects, Typescript and Redux forms intensivly to create interactive web pages"
+            },
+            {
                 "company": "Uniparticle",
                 "title": "Front-End Developer",
-                "years": "Apr 2022 - Present",
+                "years": "Apr 2022 - Jul 2022",
                 "description": "Worked in an agile environment, with weekly meetings and sprint planning. Developed various projects from UI designs to React"
             },
             {
@@ -75,26 +81,20 @@
                 "title": "Customer Service Rep.",
                 "years": "Nov 2017 - Aug 2019",
                 "description": "Top achiever on the floor with customer satisfaction rate over 88% for 3 consecutive months once on Expedia Canada account and once on Freedom Canada. Helped the new trainees getting familiar with different scenarios"
-            },
-            {
-                "company": "Business Travel Management",
-                "title": "Sales Rep.",
-                "years": "May 2017 - Nov 2017",
-                "description": "Achieved monthly bonus twice. Assisted the support agent through reservation change or cancellation"
             }
         ],
         "skills": [
             {
-                "name": "Javascript",
+                "name": "Typescript",
                 "level": "90%"
             },
             {
                 "name": "React.js",
-                "level": "80%"
+                "level": "90%"
             },
             {
                 "name": "Redux.js",
-                "level": "75%"
+                "level": "80%"
             },
             {
                 "name": "Express.js",
@@ -129,8 +129,8 @@
                 "level": "90%"
             },
             {
-                "name": "CSS",
-                "level": "80%"
+                "name": "SCSS",
+                "level": "90%"
             }
         ]
     },
@@ -153,6 +153,24 @@
                 "details": "(offline now) A Weather-App implemented in react.js, node.js and used chaka UI for styles",
                 "image": "portfolio-3.webp",
                 "url": "https://github.com/Hamdyx/Weather-App"
+            },
+            {
+                "title": "Aman Microfinance",
+                "details": "Aman company one of the top microfinance service providers in Egypt",
+                "image": "portfolio-4.png",
+                "url": "https://amanmicrofinance.com/"
+            },
+            {
+                "title": "HG Group",
+                "details": "HG Group supplies the market with high quality and reliable supplies including feeds, day-old chicks (parent stock, commercial layer, and commercial broiler), veterinarian medicine, hatcheries, farm equipment, and much more",
+                "image": "portfolio-5.png",
+                "url": "https://www.hg-egypt.com/"
+            },
+            {
+                "title": "Dyafat",
+                "details": "Dyafat brings a modern and comfortable reservation experience",
+                "image": "portfolio-6.png",
+                "url": "https://dev-new.dyafat.com/"
             }
         ]
     }

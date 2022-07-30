@@ -709,6 +709,11 @@ a:hover .liquid {
     cursor: pointer;
 }
 
+#portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* overlay */
 .portfolio-item .item-wrap .overlay {
     position: absolute;
