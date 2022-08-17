@@ -11,8 +11,3 @@ footer .social-links li:hover {
     color: var(--baseOrange);
     animation: flip 1s;
 }
-
-.portfolioImg-btn {
-    width: 100%;
-    padding: 0;
-}
