@@ -69,68 +69,41 @@
                 "title": "Junior Front-End Developer",
                 "years": "Jan 2020 - June 2020",
                 "description": "Improved site performance by optimizing images and reducing requests when possible"
-            },
-            {
-                "company": "TraviGuide",
-                "title": "Sales Rep.",
-                "years": "Aug 2019 - Jan 2020",
-                "description": "Reached monthly bonus target twice. Achieved weekly incentive 8 times"
-            },
-            {
-                "company": "Teleperformance",
-                "title": "Customer Service Rep.",
-                "years": "Nov 2017 - Aug 2019",
-                "description": "Top achiever on the floor with customer satisfaction rate over 88% for 3 consecutive months once on Expedia Canada account and once on Freedom Canada. Helped the new trainees getting familiar with different scenarios"
             }
         ],
         "skills": [
             {
-                "name": "Typescript",
-                "level": "90%"
+                "name": "Typescript"
             },
             {
-                "name": "React.js",
-                "level": "90%"
+                "name": "React"
             },
             {
-                "name": "Redux.js",
-                "level": "80%"
+                "name": "Redux"
             },
             {
-                "name": "Express.js",
-                "level": "75%"
+                "name": "Express"
             },
             {
-                "name": "Node.js",
-                "level": "50%"
+                "name": "Node"
             },
             {
-                "name": "MongoDb",
-                "level": "40%"
+                "name": "MongoDb"
             },
             {
-                "name": "Solidity",
-                "level": "40%"
+                "name": "Solidity"
             },
             {
-                "name": "Blockchain",
-                "level": "40%"
+                "name": "Blockchain"
             },
             {
-                "name": "Truffle",
-                "level": "40%"
+                "name": "Python"
             },
             {
-                "name": "Python",
-                "level": "50%"
+                "name": "Bootstrap"
             },
             {
-                "name": "Bootstrap",
-                "level": "90%"
-            },
-            {
-                "name": "SCSS",
-                "level": "90%"
+                "name": "SCSS"
             }
         ]
     },

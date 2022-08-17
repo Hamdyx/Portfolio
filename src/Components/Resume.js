@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import Icons from '../assets/icons.ts';
+// src/assets/icons.ts
 class Resume extends Component {
     getRandomColor() {
         let letters = '0123456789ABCDEF';
@@ -41,13 +42,12 @@ class Resume extends Component {
         });
 
         const skills = this.props.data.skills.map((skills) => {
-            const backgroundColor = this.getRandomColor();
-            const className = 'bar-expand ' + skills.name.toLowerCase();
-            const width = skills.level;
-
+            const iconName = skills.name.toLowerCase();
+            console.log('iconName', iconName);
+            const IconEl = Icons[iconName];
             return (
-                <li key={skills.name}>
-                    <span style={{ width, backgroundColor }} className={className}></span>
+                <li key={skills.name} className={iconName}>
+                    <IconEl />
                     <em>{skills.name}</em>
                 </li>
             );
@@ -85,9 +85,7 @@ class Resume extends Component {
                     </div>
                     <div className="nine columns main-col">
                         <p className="details">{skillmessage}</p>
-                        <div className="bars">
-                            <ul className="skills">{skills}</ul>
-                        </div>
+                        <ul className="skills">{skills}</ul>
                     </div>
                 </div>
             </section>
