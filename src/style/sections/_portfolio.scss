@@ -12,35 +12,43 @@ $--baseGrey: #343a40;
         color: $--baseGrey;
     }
     /* Portfolio Content */
-    #portfolio-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        .portfolio-item {
-            margin-bottom: 36px;
+    .portfolio_container {
+        #portfolio-wrapper {
             display: flex;
-            flex-direction: column;
-            &:hover {
-                opacity: 1;
-                -moz-opacity: 1;
-                filter: alpha(opacity=100);
-            }
-            .item-wrap {
-                flex: 1;
-                background: #fff;
-                overflow: hidden;
-                position: relative;
-                color: #6e7881;
-                -webkit-transition: all 0.3s ease-in-out;
-                -moz-transition: all 0.3s ease-in-out;
-                -o-transition: all 0.3s ease-in-out;
-                -ms-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 36px;
+            .portfolio-item {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 480px) {
+                    width: 250px;
+                }
+                &:hover {
+                    opacity: 1;
+                    -moz-opacity: 1;
+                    filter: alpha(opacity=100);
+                }
+                .item-wrap {
+                    flex: 1;
+                    background: #fff;
+                    overflow: hidden;
+                    position: relative;
+                    color: #6e7881;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
 
-                .portfolioImg-btn {
-                    width: 100%;
-                    padding: 0;
-                    img {
-                        vertical-align: bottom;
+                    .portfolioImg-btn {
+                        width: 100%;
+                        padding: 0;
+                        img {
+                            vertical-align: bottom;
+                        }
                     }
                 }
             }

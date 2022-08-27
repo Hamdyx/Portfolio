@@ -144,6 +144,12 @@
                 "details": "Dyafat brings a modern and comfortable reservation experience",
                 "image": "portfolio-6.webp",
                 "url": "https://dev-new.dyafat.com/"
+            },
+            {
+                "title": "Encryption",
+                "details": "Generate random passwords and encrypt them using cipher encryption with different keys",
+                "image": "portfolio-7.webp",
+                "url": "https://hamdyx-encryption.netlify.app/"
             }
         ]
     }
