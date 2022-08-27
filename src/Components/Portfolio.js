@@ -22,7 +22,7 @@ class Portfolio extends Component {
 
 const ProjectModal = ({ project }) => {
     const [show, setShow] = useState(false);
-    const { title, details, image } = project;
+    const { title, details, url, image } = project;
     let projectImage = 'images/portfolio/' + image;
 
     const handleModalShow = () => setShow(true);
@@ -41,15 +41,14 @@ const ProjectModal = ({ project }) => {
                         height="100%"
                     />
                 </Button>
-                <Figure.Caption style={{ textAlign: 'center' }}>
-                    {project.title}
-                </Figure.Caption>
+                <Figure.Caption style={{ textAlign: 'center' }}>{title}</Figure.Caption>
                 <Modal show={show} onHide={handleModalClose} className="project-modal">
                     <Modal.Header closeButton>
-                        <Modal.Title>{project.title}</Modal.Title>
+                        <Modal.Title>{title}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <Image src={projectImage} alt={title} width="75%" height="50%" />
+                        <a href={url}>{url}</a>
                         <p>{details}</p>
                     </Modal.Body>
                 </Modal>
