@@ -31,6 +31,7 @@ const ProjectModal = ({ project }) => {
 
     return (
         <div className="portfolio-item">
+            <span></span>
             <Figure className="item-wrap">
                 <Button className="portfolioImg-btn" onClick={handleModalShow}>
                     <Figure.Image
