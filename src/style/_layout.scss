@@ -19,8 +19,8 @@
 :root {
     --baseOrange: #fe6928;
     --baseOrangeHovered: #fe6a2abf;
-    --baseGrey: #343a40;
 }
+$--baseGrey: #343a40;
 
 body {
     background: #0f0f0f;
@@ -31,58 +31,56 @@ body {
 /* ------------------------------------------------------------------ */
 
 #about {
-    background: var(--baseGrey);
-    /* background: #000524; */
-    padding-top: 96px;
-    padding-bottom: 66px;
+    background: $--baseGrey;
+    padding: 6rem 10rem;
     overflow: hidden;
-}
+    a,
+    a:visited {
+        color: #fff;
+        &:hover,
+        &:focus {
+            color: #0762f9;
+        }
+    }
+    h2 {
+        font: 22px/30px 'opensans-bold', sans-serif;
+        color: #fff;
+        margin-bottom: 12px;
+    }
+    p {
+        line-height: 30px;
+        color: #ccc;
+    }
+    .profile-pic {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+    .contact-details {
+        width: 41.66667%;
+    }
+    .download {
+        width: 58.33333%;
+        padding-top: 6px;
+    }
+    .main-col {
+        padding-right: 5%;
+    }
+    .download .button {
+        margin-top: 6px;
+        background: #444;
+    }
 
-#about a,
-#about a:visited {
-    color: #fff;
-}
-#about a:hover,
-#about a:focus {
-    color: #0762f9;
-}
+    .download .button:hover {
+        background: #fff;
+        color: #2b2b2b;
+    }
 
-#about h2 {
-    font: 22px/30px 'opensans-bold', sans-serif;
-    color: #fff;
-    margin-bottom: 12px;
-}
-#about p {
-    line-height: 30px;
-    color: #ccc;
-}
-#about .profile-pic {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-}
-#about .contact-details {
-    width: 41.66667%;
-}
-#about .download {
-    width: 58.33333%;
-    padding-top: 6px;
-}
-#about .main-col {
-    padding-right: 5%;
-}
-#about .download .button {
-    margin-top: 6px;
-    background: #444;
-}
-#about .download .button:hover {
-    background: #fff;
-    color: #2b2b2b;
-}
-#about .download .button i {
-    margin-right: 15px;
-    font-size: 20px;
+    .download .button i {
+        margin-right: 15px;
+        font-size: 20px;
+    }
 }
 
 /* content at start */
