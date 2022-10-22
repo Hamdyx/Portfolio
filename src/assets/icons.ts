@@ -11,6 +11,7 @@ import {
     SiBootstrap,
     SiSass,
 } from 'react-icons/si';
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 const Icons = {
     typescript: SiTypescript,
@@ -24,6 +25,10 @@ const Icons = {
     python: SiPython,
     bootstrap: SiBootstrap,
     scss: SiSass,
+    facebook: FaFacebookF,
+    twitter: FaTwitter,
+    linkedin: FaLinkedinIn,
+    github: FaGithub,
 };
 
 export default Icons;

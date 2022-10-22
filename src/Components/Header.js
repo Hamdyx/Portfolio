@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import ParticlesBg from 'particles-bg';
+import Icons from '../assets/icons.ts';
 
 class Header extends Component {
     render() {
         if (!this.props.data) return null;
         const { name, description, social } = this.props.data;
-        const networks = social.map(function (network) {
+        const networks = social.map((network) => {
+            const IconEl = Icons[network.name];
+
             return (
                 <li key={network.name}>
                     <a href={network.url} aria-label={network.name}>
-                        <i className={network.className}></i>
+                        {/* <i className={network.className}></i> */}
+                        <IconEl />
                     </a>
                 </li>
             );
