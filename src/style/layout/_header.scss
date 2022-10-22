@@ -1,11 +1,11 @@
 header {
     &#home {
+        background: none;
         position: relative;
         /* header element.style(height: 1270px) overrides without !important */
         height: 100vh !important;
         min-height: 500px;
         width: 100%;
-
         text-align: center;
         overflow: hidden;
         &:before {
@@ -117,19 +117,27 @@ header {
                 border: none;
                 outline: none;
             }
+            .ant-menu {
+                flex: 1;
+                justify-content: center;
+                background: none;
+                .ant-menu-item {
+                    &:hover {
+                        background: none;
+                    }
+                }
+            }
             /* hide toggle button */
             & > a.mobile-btn {
                 display: none;
             }
             ul#nav {
                 min-height: 48px;
-                width: auto;
                 padding: 0.5rem 0;
                 text-align: center;
                 li {
                     position: relative;
                     list-style: none;
-                    height: 48px;
                     display: inline-block;
                     /* @dev nav button animation */
                     /* From cssbuttons.io by @menezes11 */

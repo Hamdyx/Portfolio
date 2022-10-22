@@ -8,6 +8,7 @@ import Contact from './Components/Contact';
 import Portfolio from './Components/Portfolio';
 
 import 'animate.css';
+import { Layout } from 'antd';
 
 class App extends Component {
     constructor(props) {
@@ -40,14 +41,14 @@ class App extends Component {
     render() {
         return (
             <React.StrictMode>
-                <div className="App">
+                <Layout className="layout">
                     <Header data={this.state.resumeData.main} />
-                    <About data={this.state.resumeData.main} />
+                    {/* <About data={this.state.resumeData.main} />
                     <Resume data={this.state.resumeData.resume} />
                     <Portfolio data={this.state.resumeData.portfolio} />
                     <Contact data={this.state.resumeData.main} />
-                    <Footer data={this.state.resumeData.main} />
-                </div>
+                    <Footer data={this.state.resumeData.main} /> */}
+                </Layout>
             </React.StrictMode>
         );
     }
