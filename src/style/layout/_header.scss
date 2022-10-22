@@ -2,8 +2,6 @@ header {
     &#home {
         background: none;
         position: relative;
-        /* header element.style(height: 1270px) overrides without !important */
-        height: 100vh !important;
         min-height: 500px;
         width: 100%;
         text-align: center;
@@ -14,11 +12,53 @@ header {
             vertical-align: middle;
             height: 100%;
         }
+        /* primary navigation
+        --------------------------------------------------------------------- */
+        #nav-wrap {
+            position: fixed;
+            height: 110px;
+            inset: 0;
+            .ant-menu {
+                flex: 1;
+                justify-content: center;
+                background: none;
+                .ant-menu-item {
+                    &:hover {
+                        background: none;
+                    }
+                }
+            }
+            ul#nav {
+                min-height: 48px;
+                padding: 0.5rem 0;
+                text-align: center;
+                align-items: center;
+                li {
+                    background: none;
+                    list-style: none;
+                    .ant-menu-title-content {
+                        .nav-btn {
+                            color: #fff;
+                            &:hover {
+                                color: $baseOrange;
+                            }
+                        }
+                    }
+                    &.current {
+                        a {
+                            color: $baseOrange;
+                        }
+                    }
+                }
+            }
+            // &.opaque {
+            // background-color: #333;
+            // }
+        }
         .banner {
             display: inline-block;
             vertical-align: middle;
             margin: 0 auto;
-            width: 85%;
             padding-bottom: 30px;
             text-align: center;
             .banner-text {
@@ -29,8 +69,8 @@ header {
                     letter-spacing: -2px;
                     margin: 0 auto 18px auto;
                     animation: fadeInDown 1.5s;
-                    @media (max-width: 425px) {
-                        font-size: 50px;
+                    @media (max-width: 768px) {
+                        font-size: 45px;
                     }
                 }
                 h2 {
@@ -39,6 +79,9 @@ header {
                     margin: 0 auto;
                     width: 70%;
                     animation: fadeInDown 1.5s;
+                    @media (max-width: 768px) {
+                        font-size: 20px;
+                    }
                 }
                 h3 {
                     color: #fff;
@@ -63,7 +106,7 @@ header {
                         a {
                             color: #fff;
                             &:hover {
-                                color: var(--baseOrange);
+                                color: $baseOrange;
                             }
                         }
                     }
@@ -95,160 +138,6 @@ header {
                     animation: bounce; /* referring directly to the animation's @keyframe declaration */
                     animation-duration: 1.2s; /* don't forget to set a duration! */
                 }
-            }
-        }
-        /* primary navigation
-        --------------------------------------------------------------------- */
-        #nav-wrap {
-            font: 12px 'opensans-bold', sans-serif;
-            width: 100%;
-            text-transform: uppercase;
-            letter-spacing: 2.5px;
-            margin: 0 auto;
-            z-index: 100;
-            position: fixed;
-            left: 0;
-            top: 0;
-            ul,
-            li,
-            a {
-                margin: 0;
-                padding: 0;
-                border: none;
-                outline: none;
-            }
-            .ant-menu {
-                flex: 1;
-                justify-content: center;
-                background: none;
-                .ant-menu-item {
-                    &:hover {
-                        background: none;
-                    }
-                }
-            }
-            /* hide toggle button */
-            & > a.mobile-btn {
-                display: none;
-            }
-            ul#nav {
-                min-height: 48px;
-                padding: 0.5rem 0;
-                text-align: center;
-                li {
-                    position: relative;
-                    list-style: none;
-                    display: inline-block;
-                    /* @dev nav button animation */
-                    /* From cssbuttons.io by @menezes11 */
-                    a.nav-btn {
-                        position: relative;
-                        padding: 1em 1.8em;
-                        outline: none;
-                        border: none;
-                        background: none;
-                        color: #fff;
-                        text-transform: uppercase;
-                        letter-spacing: 2px;
-                        font-size: 15px;
-                        overflow: hidden;
-                        border-radius: 20px;
-                        cursor: pointer;
-                        font-weight: bold;
-                        display: inline-block;
-                        line-height: 32px;
-                        text-decoration: none;
-                        text-align: left;
-                        -webkit-transition: color 0.2s ease-in-out;
-                        -moz-transition: color 0.2s ease-in-out;
-                        -o-transition: color 0.2s ease-in-out;
-                        -ms-transition: color 0.2s ease-in-out;
-                        transition: color 0.2s ease-in-out;
-                        &:active {
-                            background-color: transparent !important;
-                            background: #fe6928;
-                            background: linear-gradient(to top right, #fe6928, #001eff);
-                            color: #bfbfbf;
-                            box-shadow: 0 0 8px #fe6928, 0 0 8px #001eff, 0 0 8px #fe6928;
-                            transition: 0.1s;
-                            span {
-                                &:nth-child(1),
-                                &:nth-child(2),
-                                &:nth-child(3),
-                                &:nth-child(4) {
-                                    transition: none;
-                                    transition-delay: none;
-                                }
-                            }
-                        }
-                        &:hover {
-                            color: var(--baseOrange);
-                            box-shadow: 0 0 10px #fe6928, 0 0 25px #001eff,
-                                0 0 50px #fe6928;
-                            transition-delay: 0.6s;
-                            span {
-                                &:nth-child(1) {
-                                    left: 100%;
-                                    transition: 0.7s;
-                                }
-                                &:nth-child(2) {
-                                    top: 100%;
-                                    transition: 0.7s;
-                                    transition-delay: 0.17s;
-                                }
-                                &:nth-child(3) {
-                                    right: 100%;
-                                    transition: 0.7s;
-                                    transition-delay: 0.35s;
-                                }
-                                &:nth-child(4) {
-                                    bottom: 100%;
-                                    transition: 0.7s;
-                                    transition-delay: 0.52s;
-                                }
-                            }
-                        }
-                        span {
-                            position: absolute;
-                            &:nth-child(1) {
-                                top: 0;
-                                left: -100%;
-                                width: 100%;
-                                height: 2px;
-                                background: linear-gradient(90deg, transparent, #fe6928);
-                            }
-                            &:nth-child(2) {
-                                top: -100%;
-                                right: 0;
-                                width: 2px;
-                                height: 100%;
-                                background: linear-gradient(180deg, transparent, #fe6928);
-                            }
-                            &:nth-child(3) {
-                                bottom: 0;
-                                right: -100%;
-                                width: 100%;
-                                height: 2px;
-                                background: linear-gradient(90deg, transparent, #001eff);
-                            }
-                            &:nth-child(4) {
-                                bottom: -100%;
-                                left: 0;
-                                width: 2px;
-                                height: 100%;
-                                background: linear-gradient(360deg, transparent, #001eff);
-                            }
-                        }
-                    }
-                    &.current {
-                        a {
-                            color: var(--baseOrange);
-                        }
-                    }
-                }
-            }
-            &.opaque {
-                background-color: #333;
             }
         }
     }

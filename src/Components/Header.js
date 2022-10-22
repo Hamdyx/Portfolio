@@ -27,21 +27,16 @@ const Header = ({ data }) => {
         <AntHeader id="home">
             <ParticlesBg type="cobweb" bg={true} />
             <nav id="nav-wrap">
-                {/* <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-                    Show navigation
-                </a>
-                <a className="mobile-btn" href="#home" title="Hide navigation">
-                    Hide navigation
-                </a> */}
-
-                <ul id="nav" className="nav">
-                    <Menu
-                        theme="dark"
-                        mode="horizontal"
-                        defaultSelectedKeys={['2']}
-                        items={navBtns}
-                    />
-                </ul>
+                <Menu
+                    theme="dark"
+                    mode="horizontal"
+                    defaultSelectedKeys={['2']}
+                    items={navBtns}
+                    id="nav"
+                    className="nav"
+                />
+                {/* <ul id="nav" className="nav"> */}
+                {/* </ul> */}
             </nav>
 
             <div className="row banner">
@@ -66,7 +61,7 @@ const NavBtn = ({ route, key }) => {
     return {
         key,
         label: (
-            <a href={`#${route}`} className="nav-btn smoothscroll">
+            <a href={`#${route}`} className="custom_button_border nav-btn smoothscroll">
                 <span></span>
                 <span></span>
                 <span></span>

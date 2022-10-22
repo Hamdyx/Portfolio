@@ -16,11 +16,6 @@
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
-:root {
-    --baseOrange: #fe6928;
-    --baseOrangeHovered: #fe6a2abf;
-}
-$--baseGrey: #343a40;
 
 body {
     background: #0f0f0f;
@@ -34,7 +29,7 @@ body {
 /* ------------------------------------------------------------------ */
 
 #about {
-    background: $--baseGrey;
+    background: $baseGrey;
     padding: 6rem 10rem;
     overflow: hidden;
     a,
@@ -213,7 +208,7 @@ body {
 }
 #contact button.submit:hover {
     color: #0d0d0d;
-    background: var(--baseOrange);
+    background: $baseOrange;
 }
 #contact span.required {
     color: #0762f9;
