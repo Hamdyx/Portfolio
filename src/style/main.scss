@@ -1,11 +1,19 @@
 @import 'antd/dist/antd.css';
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'animate.css';
+
 @import './abstracts/variables';
+
 @import './base/reset';
+
 @import './layout/header';
 @import './layout/footer';
+
 @import './components/buttons';
 @import './components/modals';
-@import './sections/portfolio';
+
+@import './sections/about';
 @import './sections/resume';
+@import './sections/resume';
+
 @import './_layout.scss';

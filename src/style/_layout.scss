@@ -28,59 +28,6 @@ body {
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
-#about {
-    background: $baseGrey;
-    padding: 6rem 10rem;
-    overflow: hidden;
-    a,
-    a:visited {
-        color: #fff;
-        &:hover,
-        &:focus {
-            color: #0762f9;
-        }
-    }
-    h2 {
-        font: 22px/30px 'opensans-bold', sans-serif;
-        color: #fff;
-        margin-bottom: 12px;
-    }
-    p {
-        line-height: 30px;
-        color: #ccc;
-    }
-    .profile-pic {
-        position: relative;
-        width: 120px;
-        height: 120px;
-        border-radius: 100%;
-    }
-    .contact-details {
-        width: 41.66667%;
-    }
-    .download {
-        width: 58.33333%;
-        padding-top: 6px;
-    }
-    .main-col {
-        padding-right: 5%;
-    }
-    .download .button {
-        margin-top: 6px;
-        background: #444;
-    }
-
-    .download .button:hover {
-        background: #fff;
-        color: #2b2b2b;
-    }
-
-    .download .button i {
-        margin-right: 15px;
-        font-size: 20px;
-    }
-}
-
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content .popup-modal {
     opacity: 0;

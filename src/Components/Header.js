@@ -2,6 +2,7 @@ import React from 'react';
 import ParticlesBg from 'particles-bg';
 import Icons from '../assets/icons.ts';
 import { Layout, Menu } from 'antd';
+import { CaretDownOutlined } from '@ant-design/icons';
 const { Header: AntHeader } = Layout;
 
 const Header = ({ data }) => {
@@ -48,7 +49,7 @@ const Header = ({ data }) => {
 
             <p className="scrolldown">
                 <a className="smoothscroll" href="#about" aria-label="scroll-down">
-                    <i className="icon-down-circle"></i>
+                    <CaretDownOutlined />
                 </a>
             </p>
         </AntHeader>
