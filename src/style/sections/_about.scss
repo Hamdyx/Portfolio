@@ -8,6 +8,11 @@
     @media (max-width: 768px) {
         padding: 40px 45px;
     }
+    & > div {
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
     a,
     a:visited {
         color: #fff;
@@ -25,40 +30,9 @@
         line-height: 30px;
         color: #ccc;
     }
-    .profile-pic {
-        position: relative;
-        width: 120px;
-        height: 120px;
-        border-radius: 100%;
-    }
     .contact_details {
         @media (max-width: 768px) {
             flex-direction: column;
-            gap: 30px !important;
         }
-    }
-    .contact-details {
-        width: 41.66667%;
-    }
-    .download {
-        width: 58.33333%;
-        padding-top: 6px;
-    }
-    .main-col {
-        padding-right: 5%;
-    }
-    .download .button {
-        margin-top: 6px;
-        background: #444;
-    }
-
-    .download .button:hover {
-        background: #fff;
-        color: #2b2b2b;
-    }
-
-    .download .button i {
-        margin-right: 15px;
-        font-size: 20px;
     }
 }

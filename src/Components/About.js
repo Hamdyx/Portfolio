@@ -1,4 +1,4 @@
-import { Space } from 'antd';
+import { Avatar, Space } from 'antd';
 import React from 'react';
 
 const About = ({ data }) => {
@@ -10,14 +10,11 @@ const About = ({ data }) => {
 
     return (
         <section id="about">
-            <Space size={100} className="animate__animated animate__fadeIn">
+            <Space size={[100, 50]} className="animate__animated animate__fadeIn">
                 <div>
-                    <img
-                        className="profile-pic"
-                        src={profilepic}
-                        alt="Nordic Giant Profile Pic"
-                        width={120}
-                        height={120}
+                    <Avatar
+                        size={{ xs: 100, sm: 140, md: 120, lg: 140, xl: 180, xxl: 200 }}
+                        icon={<img src={profilepic} alt="Nordic Giant Profile Pic" />}
                     />
                 </div>
                 <Space direction="vertical" size={30}>
@@ -25,7 +22,7 @@ const About = ({ data }) => {
                         <h2>About Me</h2>
                         <p>{bio}</p>
                     </div>
-                    <Space size={75} className="contact_details">
+                    <Space size={[75, 30]} className="contact_details">
                         <div>
                             <h2>Contact Details</h2>
                             <p className="address">
