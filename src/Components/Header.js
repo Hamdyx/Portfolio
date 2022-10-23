@@ -34,11 +34,9 @@ const Header = ({ data }) => {
                     items={navBtns}
                     id="nav"
                     className="nav"
+                    rootClassName="nav_menu"
                 />
-                {/* <ul id="nav" className="nav"> */}
-                {/* </ul> */}
             </nav>
-
             <div className="row banner">
                 <div className="banner-text">
                     <h1>{name}</h1>

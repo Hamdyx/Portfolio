@@ -36,6 +36,9 @@ header {
                 li {
                     background: none;
                     list-style: none;
+                    @media (max-width: 992px) {
+                        padding: 0 10px;
+                    }
                     .ant-menu-title-content {
                         .nav-btn {
                             color: #fff;
@@ -48,6 +51,9 @@ header {
                         a {
                             color: $baseOrange;
                         }
+                    }
+                    &.ant-menu-overflow-item-rest {
+                        margin-bottom: 30px;
                     }
                 }
             }
@@ -72,6 +78,9 @@ header {
                     @media (max-width: 768px) {
                         font-size: 45px;
                     }
+                    @media (max-width: 768px) {
+                        font-size: 40px;
+                    }
                 }
                 h2 {
                     font: 25px/2.15em 'librebaskerville-regular', serif;
@@ -81,6 +90,9 @@ header {
                     animation: fadeInDown 1.5s;
                     @media (max-width: 768px) {
                         font-size: 20px;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 18px;
                     }
                 }
                 h3 {
@@ -138,6 +150,18 @@ header {
                     animation: bounce; /* referring directly to the animation's @keyframe declaration */
                     animation-duration: 1.2s; /* don't forget to set a duration! */
                 }
+            }
+        }
+    }
+}
+.ant-menu-submenu {
+    &.nav_menu {
+        ul {
+            background: none;
+            li.ant-menu-item {
+                display: flex;
+                align-items: center;
+                height: 75px;
             }
         }
     }
