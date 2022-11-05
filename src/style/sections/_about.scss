@@ -1,13 +1,6 @@
 #about {
     background: $baseGrey;
-    padding: 6rem 10rem;
     overflow: hidden;
-    @media (max-width: 992px) {
-        padding: 48px 70px;
-    }
-    @media (max-width: 768px) {
-        padding: 40px 45px;
-    }
     & > div {
         @media (max-width: 767px) {
             flex-direction: column;

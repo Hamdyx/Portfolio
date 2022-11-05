@@ -1,6 +1,7 @@
 import { Divider, Space } from 'antd';
 import React from 'react';
 import Icons from '../assets/icons.ts';
+
 const Resume = ({ data }) => {
     const { skillmessage, education, work, skills } = data
     const educationItems = education.map((education) => {
@@ -44,45 +45,37 @@ const Resume = ({ data }) => {
 
     return (
         <section id="resume">
-            <Space direction='vertical' size={15} className='resume_section'>
-                <Divider orientation="left">
-                    <h1>
-                        <span>Education</span>
-                    </h1>
-                </Divider>
-                <Space direction='vertical' size={10}>
-                    {educationItems}
-                </Space>
-            </Space>
-
-            <Space direction='vertical' size={15} className='resume_section'>
-                <Divider orientation="left">
-                    <h1>
-                        Work
-                    </h1>
-                </Divider>
-                <Space direction='vertical' size={10}>
-                    {workItems}
-                </Space>
-            </Space>
-
-            <Space direction='vertical' size={15} className='resume_section'>
-                <Divider orientation="left">
-                    <h1>
-                        <span>Skills</span>
-                    </h1>
-                </Divider>
-                <Space direction='vertical' size={10}>
-                    <p className="details">
-                        {skillmessage}
-                    </p>
-                    <ul className="skills">
-                        {skillsItems}
-                    </ul>
-                </Space>
-            </Space>
+            <ResumeItem title='Education'>
+                {educationItems}
+            </ResumeItem>
+            <ResumeItem title='Work'>
+                {workItems}
+            </ResumeItem>
+            <ResumeItem title="Skills">
+                <p className="details">
+                    {skillmessage}
+                </p>
+                <ul className="skills">
+                    {skillsItems}
+                </ul>
+            </ResumeItem>
         </section>
     );
 };
+
+const ResumeItem = ({ title, children }) => {
+    return (
+        <Space direction='vertical' size={15} className='resume_item'>
+            <Divider orientation="left">
+                <h1>
+                    <span>{title}</span>
+                </h1>
+            </Divider>
+            <Space direction='vertical' size={10}>
+                {children}
+            </Space>
+        </Space>
+    );
+}
 
 export default Resume;

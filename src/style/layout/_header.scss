@@ -18,6 +18,12 @@ header {
             position: fixed;
             height: 110px;
             inset: 0;
+            &.opaque {
+                background: #33333373;
+                box-shadow: 0 2px 32px 0 $baseOrange;
+                backdrop-filter: blur(5px);
+                z-index: 100;
+            }
             .ant-menu {
                 flex: 1;
                 justify-content: center;
