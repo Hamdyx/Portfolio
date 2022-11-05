@@ -1,37 +1,36 @@
+import { Divider, Space } from 'antd';
 import React from 'react';
 import Icons from '../assets/icons.ts';
 const Resume = ({ data }) => {
-    if (!data) return null;
-
-    const skillmessage = data.skillmessage;
-    const education = data.education.map(function (education) {
+    const { skillmessage, education, work, skills } = data
+    const educationItems = education.map((education) => {
         return (
-            <div key={education.school}>
+            <Space key={education.school} direction='vertical' size={5}>
                 <h2>{education.school}</h2>
                 <p className="info">
                     {education.degree} <span>&bull;</span>
                     <em className="date">{education.graduated}</em>
                 </p>
                 <p className="details">{education.description}</p>
-            </div>
+            </Space>
         );
     });
 
-    const work = data.work.map((work) => {
+    const workItems = work.map((work) => {
         const { company, title, years, description } = work;
         return (
-            <div key={company}>
+            <Space key={company} direction='vertical' size={5}>
                 <h2>{title}</h2>
                 <p className="info">
                     {company}
                     <span>&bull;</span> <em className="date">{years}</em>
                 </p>
                 <p className="details">{description}</p>
-            </div>
+            </Space>
         );
     });
 
-    const skills = data.skills.map((skills) => {
+    const skillsItems = skills.map((skills) => {
         const { name } = skills;
         const iconName = name.toLowerCase();
         const IconEl = Icons[iconName];
@@ -45,39 +44,43 @@ const Resume = ({ data }) => {
 
     return (
         <section id="resume">
-            <div className="row education">
-                <div className="three columns header-col">
+            <Space direction='vertical' size={15} className='resume_section'>
+                <Divider orientation="left">
                     <h1>
                         <span>Education</span>
                     </h1>
-                </div>
-                <div className="nine columns main-col">
-                    <div className="row item">
-                        <div className="twelve columns">{education}</div>
-                    </div>
-                </div>
-            </div>
+                </Divider>
+                <Space direction='vertical' size={10}>
+                    {educationItems}
+                </Space>
+            </Space>
 
-            <div className="row work">
-                <div className="three columns header-col">
+            <Space direction='vertical' size={15} className='resume_section'>
+                <Divider orientation="left">
                     <h1>
-                        <span>Work</span>
+                        Work
                     </h1>
-                </div>
-                <div className="nine columns main-col">{work}</div>
-            </div>
+                </Divider>
+                <Space direction='vertical' size={10}>
+                    {workItems}
+                </Space>
+            </Space>
 
-            <div className="row skill">
-                <div className="three columns header-col">
+            <Space direction='vertical' size={15} className='resume_section'>
+                <Divider orientation="left">
                     <h1>
                         <span>Skills</span>
                     </h1>
-                </div>
-                <div className="nine columns main-col">
-                    <p className="details">{skillmessage}</p>
-                    <ul className="skills">{skills}</ul>
-                </div>
-            </div>
+                </Divider>
+                <Space direction='vertical' size={10}>
+                    <p className="details">
+                        {skillmessage}
+                    </p>
+                    <ul className="skills">
+                        {skillsItems}
+                    </ul>
+                </Space>
+            </Space>
         </section>
     );
 };

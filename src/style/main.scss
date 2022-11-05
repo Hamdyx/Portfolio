@@ -1,6 +1,6 @@
 @import 'antd/dist/antd.css';
-@import 'bootstrap/dist/css/bootstrap.min.css';
 @import 'animate.css';
+@import './fonts/fonts';
 
 @import './abstracts/variables';
 
@@ -13,7 +13,6 @@
 @import './components/modals';
 
 @import './sections/about';
-@import './sections/resume';
 @import './sections/resume';
 
 @import './_layout.scss';
