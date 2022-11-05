@@ -1,4 +1,4 @@
-import { Avatar, Space } from 'antd';
+import { Avatar, Image, Space } from 'antd';
 import React from 'react';
 
 const About = ({ data }) => {
@@ -14,7 +14,13 @@ const About = ({ data }) => {
                 <div>
                     <Avatar
                         size={{ xs: 100, sm: 140, md: 120, lg: 140, xl: 180, xxl: 200 }}
-                        icon={<img src={profilepic} alt="Nordic Giant Profile Pic" />}
+                        icon={<Image
+                            width="100%"
+                            height="100%"
+                            src={profilepic}
+                            alt="Profile Pic"
+                            preview={false}
+                        />}
                     />
                 </div>
                 <Space direction="vertical" size={30}>

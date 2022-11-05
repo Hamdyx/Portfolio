@@ -16,7 +16,7 @@ header {
         --------------------------------------------------------------------- */
         #nav-wrap {
             position: fixed;
-            height: 110px;
+            height: 90px;
             inset: 0;
             &.opaque {
                 background: #33333373;
@@ -35,10 +35,9 @@ header {
                 }
             }
             ul#nav {
-                min-height: 48px;
+                height: 100%;
                 padding: 0.5rem 0;
-                text-align: center;
-                align-items: center;
+                align-items: baseline;
                 li {
                     background: none;
                     list-style: none;
