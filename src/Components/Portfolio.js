@@ -1,23 +1,20 @@
-import React, { Component, useState } from 'react';
-import { Button, Figure, Image, Modal } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Card, Image, Modal } from 'antd';
+const { Meta } = Card;
 
-class Portfolio extends Component {
-    render() {
-        if (!this.props.data) return null;
+const Portfolio = ({ data }) => {
+    const projectsDev = data.projects.map((project, i) => {
+        return <ProjectModal key={i} project={project} />;
+    });
 
-        const projectsDev = this.props.data.projects.map((project, i) => {
-            return <ProjectModal key={i} project={project} />;
-        });
-
-        return (
-            <section id="portfolio">
-                <div className="portfolio_container animate__animated animate__fadeInLeft">
-                    <h1>Check Out Some of My Works.</h1>
-                    <div id="portfolio-wrapper">{projectsDev}</div>
-                </div>
-            </section>
-        );
-    }
+    return (
+        <section id="portfolio">
+            <div className="portfolio_container animate__animated animate__fadeInLeft">
+                <h1>Check Out Some of My Works.</h1>
+                <div id="portfolio-wrapper">{projectsDev}</div>
+            </div>
+        </section>
+    );
 }
 
 const ProjectModal = ({ project }) => {
@@ -32,27 +29,27 @@ const ProjectModal = ({ project }) => {
     return (
         <div className="portfolio-item">
             <span></span>
-            <Figure className="item-wrap">
-                <Button className="portfolioImg-btn" onClick={handleModalShow}>
-                    <Figure.Image
-                        src={projectImage}
-                        alt={title}
-                        width="100%"
-                        height="100%"
-                    />
-                </Button>
-                <Figure.Caption style={{ textAlign: 'center' }}>{title}</Figure.Caption>
-                <Modal show={show} onHide={handleModalClose} className="project-modal">
-                    <Modal.Header closeButton>
-                        <Modal.Title>{title}</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <Image src={projectImage} alt={title} width="75%" height="50%" />
-                        <a href={url}>{url}</a>
-                        <p>{details}</p>
-                    </Modal.Body>
-                </Modal>
-            </Figure>
+            <Card
+                hoverable
+                cover={<img alt={title} src={projectImage} className="portfolioImg-btn" />}
+                className="item-wrap"
+                onClick={handleModalShow}
+            >
+                <Meta title={title} description="www.instagram.com" />
+            </Card>
+            <Modal
+                title={title}
+                centered
+                open={show}
+                onOk={handleModalShow}
+                onCancel={handleModalClose}
+                className="project_modal"
+                footer={null}
+            >
+                <Image src={projectImage} alt={title} width="75%" height="50%" />
+                <a href={url}>{url}</a>
+                <p>{details}</p>
+            </Modal>
         </div>
     );
 };

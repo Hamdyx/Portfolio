@@ -5,6 +5,7 @@ import About from './Components/About';
 import Resume from './Components/Resume';
 
 import { Layout } from 'antd';
+import Portfolio from './Components/Portfolio';
 
 const App = () => {
     const [resumeData, setResumeData] = useState({});
@@ -32,9 +33,9 @@ const App = () => {
             <Layout className="layout">
                 <Header data={resumeData.main} />
                 <About data={resumeData.main} />
-                {resumeData.resume && <Resume data={resumeData.resume} />}
+                {resumeData?.resume && <Resume data={resumeData.resume} />}
+                {resumeData?.portfolio && <Portfolio data={resumeData.portfolio} />}
                 {/* 
-                <Portfolio data={resumeData.portfolio} />
                 <Contact data={resumeData.main} />
                 <Footer data={resumeData.main} /> */}
             </Layout>
