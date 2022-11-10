@@ -31,11 +31,11 @@ const ProjectModal = ({ project }) => {
             <span></span>
             <Card
                 hoverable
-                cover={<img alt={title} src={projectImage} className="portfolioImg-btn" />}
+                cover={<Image alt={title} src={projectImage} className="portfolioImg-btn" preview={false} />}
                 className="item-wrap"
                 onClick={handleModalShow}
             >
-                <Meta title={title} description="www.instagram.com" />
+                <Meta title={title} />
             </Card>
             <Modal
                 title={title}

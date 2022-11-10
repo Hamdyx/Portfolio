@@ -66,8 +66,8 @@
                     position: relative;
                     width: 250px;
                     height: 250px;
-                    background: rgba(255, 255, 255, 0.05);
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    background: #ffffff0d;
+                    box-shadow: 0 5px 15px #0000001a;
                     border-radius: 8px;
                     z-index: 1;
                     .ant-card-cover {
@@ -77,9 +77,10 @@
                         align-items: center;
                         height: 225px;
                         img {
+                            object-fit: fill;
                             width: 100%;
                             position: absolute;
-                            top: 0;
+                            top: -120px;
                             left: 20px;
                             height: 225px;
                             border-radius: 8px;
@@ -108,18 +109,6 @@
             flex-direction: column;
             justify-content: center;
             min-width: 290px;
-        }
-    }
-}
-.project-modal {
-    .modal-dialog {
-        .modal-content {
-            border-radius: 10px;
-            .modal-body {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
         }
     }
 }

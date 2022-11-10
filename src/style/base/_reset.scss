@@ -75,6 +75,9 @@ video {
     vertical-align: baseline;
     background: transparent;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'opensans-regular', sans-serif;
     font-weight: normal;
