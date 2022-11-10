@@ -3,6 +3,7 @@ import $ from 'jquery';
 import Header from './Components/Header';
 import About from './Components/About';
 import Resume from './Components/Resume';
+import Contact from './Components/Contact';
 
 import { Layout } from 'antd';
 import Portfolio from './Components/Portfolio';
@@ -31,12 +32,12 @@ const App = () => {
     return (
         <React.StrictMode>
             <Layout className="layout">
-                <Header data={resumeData.main} />
-                <About data={resumeData.main} />
+                {resumeData?.main && <Header data={resumeData.main} />}
+                {resumeData?.main && <About data={resumeData.main} />}
                 {resumeData?.resume && <Resume data={resumeData.resume} />}
                 {resumeData?.portfolio && <Portfolio data={resumeData.portfolio} />}
+                {resumeData?.main && <Contact data={resumeData.main} />}
                 {/* 
-                <Contact data={resumeData.main} />
                 <Footer data={resumeData.main} /> */}
             </Layout>
         </React.StrictMode>

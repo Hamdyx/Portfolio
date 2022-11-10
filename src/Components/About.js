@@ -2,7 +2,6 @@ import { Avatar, Image, Space } from 'antd';
 import React from 'react';
 
 const About = ({ data }) => {
-    if (!data) return null;
     const { name, bio, phone, email, address } = data;
     const { country, city } = address;
     const profilepic = `images/${data.image}`;

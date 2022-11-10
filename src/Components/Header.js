@@ -6,7 +6,6 @@ import { CaretDownOutlined } from '@ant-design/icons';
 const { Header: AntHeader } = Layout;
 
 const Header = ({ data }) => {
-    if (!data) return null;
     const { name, description, social } = data;
     const networks = social.map((network) => {
         const IconEl = Icons[network.name];
