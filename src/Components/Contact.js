@@ -1,7 +1,8 @@
-import { Button, Col, Form, Input, Row } from 'antd';
+import { Button, Form, Input, Space } from 'antd';
 import React from 'react';
 import { MdEmail } from 'react-icons/md';
 const Contact = ({ data }) => {
+    const [form] = Form.useForm()
     const { name, phone, address, contactmessage } = data;
     const { city, country } = address;
     return (
@@ -20,135 +21,65 @@ const Contact = ({ data }) => {
                     </p>
                 </div>
             </div>
-            {/* <Container></Container> */}
-            <Row>
-                <Col span={16} className="animate__animated animate__fadeInLeft">
-                    <form
-                        id="contactForm"
-                        name="contactForm"
+            <Space align='baseline' size={0} className='form_wrapper'>
+                <Form
+                    id="contactForm"
+                    name="contactForm"
+                    form={form}
+                    labelCol={{ span: 4 }}
+                    wrapperCol={{ span: 12 }}
+                    initialValues={{ remember: true }}
+                    className="animate__animated animate__fadeInLeft"
+                >
+                    <Form.Item
+                        label="Name"
+                        name="contactName"
+                        rules={[{
+                            required: true
+                        }]}
                     >
-                        <fieldset>
-                            <div>
-                                <label htmlFor="contactName">
-                                    Name <span className="required">*</span>
-                                </label>
-                                <input
-                                    type="text"
-                                    defaultValue=""
-                                    size="35"
-                                    id="contactName"
-                                    name="contactName"
-                                />
-                            </div>
-
-                            <div>
-                                <label htmlFor="contactEmail">
-
-                                    Email <span className="required">*</span>
-                                </label>
-                                <input
-                                    type="text"
-                                    defaultValue=""
-                                    size="35"
-                                    id="contactEmail"
-                                    name="contactEmail"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="contactSubject">Subject</label>
-                                <input
-                                    type="text"
-                                    defaultValue=""
-                                    size="35"
-                                    id="contactSubject"
-                                    name="contactSubject"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="contactMessage">
-                                    Message <span className="required">*</span>
-                                </label>
-                                <textarea
-                                    cols="50"
-                                    rows="15"
-                                    id="contactMessage"
-                                    name="contactMessage"
-                                ></textarea>
-                            </div>
-                            <div>
-                                <button className="submit">Submit</button>
-                                <span id="image-loader">
-                                    <img alt="" src="images/loader.gif" />
-                                </span>
-                            </div>
-                        </fieldset>
-                    </form>
-                    <Form
-                        // action=""
-                        // method="post"
-                        id="contactForm"
-                        name="contactForm"
-                        // name="basic"
-                        labelCol={{ span: 6 }}
-                        wrapperCol={{ span: 18 }}
-                        initialValues={{ remember: true }}
-                        // onFinish={onFinish}
-                        // onFinishFailed={onFinishFailed}
-                        autoComplete="off"
+                        <Input id="contactName" />
+                    </Form.Item>
+                    <Form.Item
+                        label="Email"
+                        name="contactEmail"
+                        rules={[{
+                            required: true
+                        }]}
                     >
-                        <Form.Item
-                            label="Name"
-                            name="contactName"
-                            rules={[{
-                                required: true
-                                // message: 'Please input your username!' 
-                            }]}
-                        >
-                            <Input id="contactName" />
-                        </Form.Item>
-                        <Form.Item
-                            label="Email"
-                            name="contactEmail"
-                            rules={[{
-                                required: true
-                                // message: 'Please input your username!' 
-                            }]}
-                        >
-                            <Input id="contactEmail" />
-                        </Form.Item>
-                        <Form.Item
-                            label="Subject"
-                            name="contactSubject"
-                            rules={[{
-                                // required: true
-                                // message: 'Please input your username!' 
-                            }]}
-                        >
-                            <Input id="contactSubject" />
-                        </Form.Item>
+                        <Input id="contactEmail" />
+                    </Form.Item>
+                    <Form.Item
+                        label="Subject"
+                        name="contactSubject"
+                    >
+                        <Input id="contactSubject" />
+                    </Form.Item>
 
-                        <Form.Item
-                            label="Message"
-                            name="contactMessage"
-                            cols="50"
-                            rows="15"
-                            rules={[{
-                                required: true
-                                // message: 'Please input your username!' 
-                            }]}
-                        >
-                            <Input.TextArea id="contactMessage" />
-                        </Form.Item>
-                        <Button className="submit">Submit</Button>
-                    </Form>
-
-                    <div id="message-warning"> Error boy</div>
-                    <div id="message-success">
-                        <i className="fa fa-check"></i>Your message was sent,
-                        thank you!
-                        <br />
-                    </div>
-                </Col>
+                    <Form.Item
+                        label="Message"
+                        name="contactMessage"
+                        wrapperCol={{
+                            span: 14,
+                        }}
+                        rules={[{
+                            required: true
+                        }]}
+                    >
+                        <Input.TextArea
+                            rows={12}
+                            id="contactMessage" />
+                    </Form.Item>
+                    <Form.Item
+                        wrapperCol={{
+                            span: 3,
+                            offset: 15,
+                        }}>
+                        <Button type="primary" className="submit" htmlType="submit" >
+                            Submit
+                        </Button>
+                    </Form.Item>
+                </Form>
                 <aside className="animate__animated animate__fadeInRight">
                     <div className="">
                         <h2>Address and Phone</h2>
@@ -161,7 +92,7 @@ const Contact = ({ data }) => {
                         </p>
                     </div>
                 </aside>
-            </Row>
+            </Space>
         </section>
     );
 }
