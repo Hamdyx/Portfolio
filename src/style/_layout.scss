@@ -1,9 +1,5 @@
 /*
 =====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
 
    TOC:
    a. General Styles
@@ -29,48 +25,42 @@ body {
         }
     }
 }
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content .popup-modal {
-    opacity: 0;
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    -ms-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
+.social_links {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+    animation: fadeInUp 1.5s;
+    li {
+        display: inline-block;
+        margin: 0 15px;
+        padding: 0;
+        &:hover {
+            animation: flip 1s;
+        }
+        a {
+            color: #fff;
+            &:hover {
+                color: $baseOrange;
+            }
+        }
+    }
 }
-/* content fadein */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
-    opacity: 1;
-}
-/* content fadeout */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
-    opacity: 0;
-}
-
-#message-warning,
-#message-success {
-    display: none;
-    background: #0f0f0f;
-    padding: 24px 24px;
-    margin-bottom: 36px;
-    width: 65%;
-    margin-left: 26%;
-}
-#message-warning {
-    color: #d72828;
-}
-#message-success {
-    color: #0762f9;
-}
-
-#message-warning i,
-#message-success i {
-    margin-right: 10px;
-}
-#image-loader {
-    display: none;
-    position: relative;
-    left: 18px;
-    top: 17px;
+.ant-back-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #525252;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 100%;
+    &:hover {
+        background-color: #fe6928;
+        color: #0d0d0d;
+        svg {
+            animation: fadeInUp 1s; /* referring directly to the animation's @keyframe declaration */
+        }
+    }
 }

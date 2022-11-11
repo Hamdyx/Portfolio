@@ -1,27 +1,14 @@
 import React from 'react';
 import ParticlesBg from 'particles-bg';
-import Icons from '../assets/icons.ts';
 import { Layout, Menu } from 'antd';
 import { CaretDownOutlined } from '@ant-design/icons';
+import SocialLinks from './SocialLinks';
 const { Header: AntHeader } = Layout;
 
 const Header = ({ data }) => {
     const { name, description, social } = data;
-    const networks = social.map((network) => {
-        const IconEl = Icons[network.name];
-
-        return (
-            <li key={network.name}>
-                <a href={network.url} aria-label={network.name}>
-                    <IconEl />
-                </a>
-            </li>
-        );
-    });
-
     const routes = ['home', 'about', 'resume', 'portfolio', 'contact'];
-
-    const navBtns = routes.map((route) => NavBtn({ key: route, route: route }));
+    const navBtns = routes.map((route) => NavBtn(route));
 
     return (
         <AntHeader id="home">
@@ -30,7 +17,7 @@ const Header = ({ data }) => {
                 <Menu
                     theme="dark"
                     mode="horizontal"
-                    defaultSelectedKeys={['2']}
+                    defaultSelectedKeys={['home']}
                     items={navBtns}
                     id="nav"
                     className="nav"
@@ -42,28 +29,26 @@ const Header = ({ data }) => {
                     <h1>{name}</h1>
                     <h2>{description}.</h2>
                     <hr />
-                    <ul className="social">{networks}</ul>
+                    <SocialLinks socials={social} />
                 </div>
             </div>
-
-            <p className="scrolldown">
-                <a className="smoothscroll" href="#about" aria-label="scroll-down">
-                    <CaretDownOutlined />
-                </a>
-            </p>
+            <a href="#contact" aria-label="scroll-down" className="scrolldown">
+                <CaretDownOutlined />
+            </a>
         </AntHeader>
     );
 };
 
-const NavBtn = ({ route, key }) => {
+const NavBtn = (route) => {
     return {
-        key,
+        key: route,
         label: (
-            <a href={`#${route}`} className="custom_button_border nav-btn smoothscroll">
+            <a href={`#${route}`} className="custom_button_border nav-btn">
                 <span></span>
                 <span></span>
                 <span></span>
-                <span></span> {route}
+                <span></span>
+                {route}
             </a>
         ),
     };

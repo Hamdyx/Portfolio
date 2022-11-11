@@ -62,9 +62,6 @@ header {
                     }
                 }
             }
-            // &.opaque {
-            // background-color: #333;
-            // }
         }
         .banner {
             display: inline-block;
@@ -108,31 +105,11 @@ header {
                     margin: 18px auto 24px auto;
                     border-color: #2f2d2e;
                 }
-                .social {
-                    margin: 24px 0;
-                    padding: 0;
-                    font-size: 30px;
-                    animation: fadeInUp 1.5s;
-                    li {
-                        display: inline-block;
-                        margin: 0 15px;
-                        padding: 0;
-                        &:hover {
-                            animation: flip 1s;
-                        }
-                        a {
-                            color: #fff;
-                            &:hover {
-                                color: $baseOrange;
-                            }
-                        }
-                    }
-                }
             }
         }
 
-        .scrolldown {
-            a {
+        a {
+            &.scrolldown {
                 position: absolute;
                 bottom: 30px;
                 left: 50%;
@@ -145,15 +122,11 @@ header {
                 line-height: 42px;
                 color: #fff;
                 border-radius: 100%;
-
-                -webkit-transition: all 0.3s ease-in-out;
-                -moz-transition: all 0.3s ease-in-out;
-                -o-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
                 &:hover {
                     color: #fe6928;
                     animation: bounce; /* referring directly to the animation's @keyframe declaration */
-                    animation-duration: 1.2s; /* don't forget to set a duration! */
+                    animation-duration: 1s; /* don't forget to set a duration! */
                 }
             }
         }

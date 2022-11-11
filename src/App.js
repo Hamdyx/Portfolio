@@ -4,8 +4,10 @@ import Header from './Components/Header';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
+import { CaretUpFilled } from '@ant-design/icons';
 
-import { Layout } from 'antd';
+import { BackTop, Layout } from 'antd';
 import Portfolio from './Components/Portfolio';
 
 const App = () => {
@@ -37,8 +39,10 @@ const App = () => {
                 {resumeData?.resume && <Resume data={resumeData.resume} />}
                 {resumeData?.portfolio && <Portfolio data={resumeData.portfolio} />}
                 {resumeData?.main && <Contact data={resumeData.main} />}
-                {/* 
-                <Footer data={resumeData.main} /> */}
+                {resumeData?.main && <Footer data={resumeData.main} />}
+                <BackTop>
+                    <CaretUpFilled />
+                </BackTop>
             </Layout>
         </React.StrictMode>
     );
