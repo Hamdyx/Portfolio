@@ -1,0 +1,31 @@
+#about {
+    background: $baseGrey;
+    overflow: hidden;
+    & > div {
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    a,
+    a:visited {
+        color: #fff;
+        &:hover,
+        &:focus {
+            color: #0762f9;
+        }
+    }
+    h2 {
+        font: 22px/30px 'opensans-bold', sans-serif;
+        color: #fff;
+        margin-bottom: 12px;
+    }
+    p {
+        line-height: 30px;
+        color: #ccc;
+    }
+    .contact_details {
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+}

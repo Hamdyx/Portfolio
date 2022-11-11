@@ -1,7 +1,5 @@
 #portfolio {
     background: #ebeeee;
-    padding-top: 90px;
-    padding-bottom: 60px;
     h1 {
         font: 15px/24px 'opensans-semibold', sans-serif;
         text-transform: uppercase;
@@ -15,8 +13,8 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            column-gap: 6rem;
-            row-gap: 13rem;
+            column-gap: 96px;
+            row-gap: 200px;
             padding: 3rem;
             .portfolio-item {
                 width: 300px;
@@ -68,22 +66,22 @@
                     position: relative;
                     width: 250px;
                     height: 250px;
-                    background: rgba(255, 255, 255, 0.05);
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    background: #ffffff0d;
+                    box-shadow: 0 5px 15px #0000001a;
                     border-radius: 8px;
                     z-index: 1;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .portfolioImg-btn {
-                        width: 100%;
-                        padding: 0;
+                    .ant-card-cover {
                         position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 225px;
                         img {
+                            object-fit: fill;
+                            width: 100%;
                             position: absolute;
-                            top: -100px;
+                            top: -120px;
                             left: 20px;
-                            width: 225px;
                             height: 225px;
                             border-radius: 8px;
                             transform: skewX(15deg);
@@ -93,12 +91,24 @@
                             }
                         }
                     }
-                    figcaption {
-                        position: absolute;
-                        bottom: 0;
+                    .ant-card-body {
+                        padding: 14px 24px;
                     }
                 }
             }
+        }
+    }
+}
+.project_modal {
+    .ant-modal-content {
+        height: 100%;
+        .ant-modal-body {
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 290px;
         }
     }
 }

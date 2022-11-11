@@ -1,6 +1,8 @@
 #resume {
     background: #fff;
-    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     overflow: hidden;
     a {
         color: #0762f9;
@@ -16,28 +18,13 @@
         font: 18px/24px 'opensans-bold', sans-serif;
         text-transform: uppercase;
         letter-spacing: 1px;
-        span {
-            border-bottom: 3px solid #0762f9;
-            padding-bottom: 6px;
-        }
+        border-bottom: 3px solid #0762f9;
     }
     h3,
     h2 {
         font: 25px/30px 'opensans-bold', sans-serif;
     }
-    .header-col {
-        padding-top: 9px;
-    }
-    .education,
-    .work,
-    .skill {
-        margin-bottom: 48px;
-        padding-bottom: 24px;
-        border-bottom: 1px solid #e8e8e8;
-        &:last-child {
-            margin-bottom: 0;
-            border: 0;
-        }
+    .resume_item {
         &:hover {
             /* each time when pulse animation ends it triggers backInLeft animation */
             animation: pulse 2s;
@@ -45,20 +32,13 @@
         .info {
             font: 16px/24px 'librebaskerville-italic', serif;
             color: #6e7881;
-            margin-bottom: 18px;
-            margin-top: 9px;
             span {
-                margin-right: 5px;
-                margin-left: 5px;
+                margin-inline: 5px;
             }
             .date {
                 font: 15px/24px 'opensans-regular', sans-serif;
-                margin-top: 6px;
             }
         }
-    }
-    .main-col {
-        padding-right: 10%;
         .details {
             color: #6e7881;
         }

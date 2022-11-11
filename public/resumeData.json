@@ -21,23 +21,19 @@
         "social": [
             {
                 "name": "facebook",
-                "url": "https://facebook.com/a.hamdy.jsx",
-                "className": "fa fa-facebook"
+                "url": "https://facebook.com/a.hamdy.jsx"
             },
             {
                 "name": "twitter",
-                "url": "https://twitter.com/ma_niguh",
-                "className": "fa fa-twitter"
+                "url": "https://twitter.com/ma_niguh"
             },
             {
                 "name": "linkedin",
-                "url": "https://www.linkedin.com/in/hamdyx/",
-                "className": "fa fa-linkedin"
+                "url": "https://www.linkedin.com/in/hamdyx/"
             },
             {
                 "name": "github",
-                "url": "https://github.com/Hamdyx",
-                "className": "fa fa-github"
+                "url": "https://github.com/Hamdyx"
             }
         ]
     },
@@ -53,16 +49,22 @@
         ],
         "work": [
             {
-                "company": "Taqneen",
+                "company": "Taqneen Solutions",
                 "title": "Senior Front-End Developer",
                 "years": "Jul 2022 - Present",
-                "description": "Worked with JSON objects, Typescript and Redux forms intensivly to create interactive web pages"
+                "description": "Developed different flows and maintained existing features and forms while refactoring code to follow clean code principles"
             },
             {
                 "company": "Uniparticle",
                 "title": "Junior Front-End Developer",
                 "years": "Apr 2022 - Jul 2022",
                 "description": "Worked in an agile environment, with weekly meetings and sprint planning. Developed various projects from UI designs to React"
+            },
+            {
+                "company": "Remote",
+                "title": "Freelance Front-End Developer",
+                "years": "Jul 2020 - Apr 2022",
+                "description": "Developed various templates and landing pages and new features based on functional specifications "
             },
             {
                 "company": "Right-Click Media",

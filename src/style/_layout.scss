@@ -1,246 +1,54 @@
-/*
-=====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
-
-   TOC:
-   a. General Styles
-   b. About Section
-   d. Portfolio Section
-   f. Contact Section
-
-===================================================================== */
-
-/* ------------------------------------------------------------------ */
-/* a. General Styles
-/* ------------------------------------------------------------------ */
-:root {
-    --baseOrange: #fe6928;
-    --baseOrangeHovered: #fe6a2abf;
-    --baseGrey: #343a40;
-}
-
 body {
     background: #0f0f0f;
 }
-
-/* ------------------------------------------------------------------ */
-/* c. About Section
-/* ------------------------------------------------------------------ */
-
-#about {
-    background: var(--baseGrey);
-    /* background: #000524; */
-    padding-top: 96px;
-    padding-bottom: 66px;
-    overflow: hidden;
+.layout {
+    background: transparent;
+    & > section {
+        padding: 6rem 10rem;
+        @media (max-width: 992px) {
+            padding: 48px 70px;
+        }
+        @media (max-width: 768px) {
+            padding: 40px 45px;
+        }
+    }
 }
-
-#about a,
-#about a:visited {
+.social_links {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+    animation: fadeInUp 1.5s;
+    li {
+        display: inline-block;
+        margin: 0 15px;
+        padding: 0;
+        &:hover {
+            animation: flip 1s;
+        }
+        a {
+            color: #fff;
+            &:hover {
+                color: $baseOrange;
+            }
+        }
+    }
+}
+.ant-back-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #525252;
+    transition: all 0.2s ease-in-out;
     color: #fff;
-}
-#about a:hover,
-#about a:focus {
-    color: #0762f9;
-}
-
-#about h2 {
-    font: 22px/30px 'opensans-bold', sans-serif;
-    color: #fff;
-    margin-bottom: 12px;
-}
-#about p {
-    line-height: 30px;
-    color: #ccc;
-}
-#about .profile-pic {
-    position: relative;
-    width: 120px;
-    height: 120px;
+    font-size: 24px;
     border-radius: 100%;
-}
-#about .contact-details {
-    width: 41.66667%;
-}
-#about .download {
-    width: 58.33333%;
-    padding-top: 6px;
-}
-#about .main-col {
-    padding-right: 5%;
-}
-#about .download .button {
-    margin-top: 6px;
-    background: #444;
-}
-#about .download .button:hover {
-    background: #fff;
-    color: #2b2b2b;
-}
-#about .download .button i {
-    margin-right: 15px;
-    font-size: 20px;
-}
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content .popup-modal {
-    opacity: 0;
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    -ms-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-}
-/* content fadein */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
-    opacity: 1;
-}
-/* content fadeout */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
-    opacity: 0;
-}
-
-/* ------------------------------------------------------------------ */
-/* h. Contact Section
-/* ------------------------------------------------------------------ */
-
-#contact {
-    background: #191919;
-    padding-top: 96px;
-    padding-bottom: 102px;
-    color: #bebebe;
-    /* color: #636363; */
-}
-#contact .section-head {
-    margin-bottom: 42px;
-}
-
-#contact a,
-#contact a:visited {
-    color: #0762f9;
-}
-#contact a:hover,
-#contact a:focus {
-    color: #fff;
-}
-
-#contact h1 {
-    font: 18px/24px 'opensans-bold', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #ebeeee;
-    margin-bottom: 6px;
-}
-#contact h1 span {
-    display: none;
-}
-#contact h1:before {
-    font-family: 'FontAwesome';
-    content: '\f0e0';
-    padding-right: 10px;
-    font-size: 72px;
-    line-height: 72px;
-    text-align: left;
-    float: left;
-    color: #ebeeee;
-}
-
-#contact h4,
-#contact h2 {
-    font: 16px/24px 'opensans-bold', sans-serif;
-    color: #ebeeee;
-    margin-bottom: 6px;
-}
-#contact p.lead {
-    font: 18px/36px 'opensans-light', sans-serif;
-    padding-right: 3%;
-}
-#contact .header-col {
-    padding-top: 6px;
-}
-
-/* contact form */
-#contact form {
-    margin-bottom: 30px;
-}
-#contact label {
-    font: 15px/24px 'opensans-bold', sans-serif;
-    margin: 12px 0;
-    color: #ebeeee;
-    display: block;
-    float: left;
-    width: 26%;
-}
-#contact input,
-#contact textarea,
-#contact select {
-    padding: 10px 20px;
-    color: #eee;
-    background: #373233;
-    margin-bottom: 42px;
-    border: 0;
-    outline: none;
-    font-size: 15px;
-    line-height: 24px;
-    width: 65%;
-}
-/* @bug textarea breaks the layout when resized horizontally more than col width  */
-#contact textarea {
-    /* @fix prevent textarea from stretching in width */
-    resize: vertical;
-}
-#contact input:focus,
-#contact textarea:focus,
-#contact select:focus {
-    color: #000000;
-    background-color: #ebeeee;
-}
-#contact button.submit {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #fff;
-    background: #525252;
-    border: none;
-    cursor: pointer;
-    height: auto;
-    display: inline-block;
-    border-radius: 0px;
-    margin-left: 26%;
-}
-#contact button.submit:hover {
-    color: #0d0d0d;
-    background: var(--baseOrange);
-}
-#contact span.required {
-    color: #0762f9;
-    font-size: 13px;
-}
-#message-warning,
-#message-success {
-    display: none;
-    background: #0f0f0f;
-    padding: 24px 24px;
-    margin-bottom: 36px;
-    width: 65%;
-    margin-left: 26%;
-}
-#message-warning {
-    color: #d72828;
-}
-#message-success {
-    color: #0762f9;
-}
-
-#message-warning i,
-#message-success i {
-    margin-right: 10px;
-}
-#image-loader {
-    display: none;
-    position: relative;
-    left: 18px;
-    top: 17px;
+    &:hover {
+        background-color: #fe6928;
+        color: #0d0d0d;
+        svg {
+            animation: fadeInUp 1s; /* referring directly to the animation's @keyframe declaration */
+        }
+    }
 }

@@ -1,7 +1,19 @@
+@import 'antd/dist/antd.css';
+@import 'animate.css';
+@import './fonts/fonts';
+
+@import './abstracts/variables';
+
+@import './base/reset';
+
 @import './layout/header';
 @import './layout/footer';
+
 @import './components/buttons';
-@import './components/modals';
-@import './sections/portfolio';
+
+@import './sections/about';
 @import './sections/resume';
+@import './sections/portfolio';
+@import './sections/contact';
+
 @import './_layout.scss';
