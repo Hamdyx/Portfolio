@@ -1,7 +1,5 @@
 #contact {
     background: #191919;
-    // padding-top: 96px;
-    // padding-bottom: 102px;
     color: #bebebe;
     .section-head {
         margin-bottom: 42px;
@@ -41,9 +39,9 @@
         &.lead {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             font: 18px/36px 'opensans-light', sans-serif;
-            padding-right: 3%;
             svg {
                 font-size: 74px;
                 color: #ebeeee;
@@ -75,16 +73,10 @@
         outline: none;
         font-size: 15px;
         line-height: 24px;
-        // width: 65%;
         &:focus {
             color: #000000;
             background-color: #ebeeee;
         }
-    }
-    /* @bug textarea breaks the layout when resized horizontally more than col width  */
-    textarea {
-        /* @fix prevent textarea from stretching in width */
-        resize: vertical;
     }
     button {
         &.submit {
@@ -93,9 +85,6 @@
             color: #fff;
             background: #525252;
             border: none;
-            // cursor: pointer;
-            // display: inline-block;
-            // margin-left: 60%;
             height: 42px;
             border-radius: 6px;
             &:hover {

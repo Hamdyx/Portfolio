@@ -8,18 +8,10 @@ const Contact = ({ data }) => {
     return (
         <section id="contact">
             <div className="section-head animate__animated animate__fadeInDown">
-                <div className="header-col">
-                    <h1>
-                        <span>Get In Touch.</span>
-                    </h1>
-                </div>
-
-                <div >
-                    <p className="lead">
-                        <MdEmail />
-                        {contactmessage}
-                    </p>
-                </div>
+                <p className="lead">
+                    <MdEmail />
+                    {contactmessage}
+                </p>
             </div>
             <Space align='baseline' size={0} className='form_wrapper'>
                 <Form
