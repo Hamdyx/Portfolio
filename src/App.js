@@ -10,10 +10,12 @@ import { CaretUpFilled } from '@ant-design/icons';
 
 import { BackTop, Layout } from 'antd';
 import Portfolio from './Components/Portfolio';
-import RouteChangeTracker from './Components/RouteChangeTracker';
 
 const TRACKING_ID = "G-YNBRX2WRRW"; // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
+ReactGA.initialize(TRACKING_ID, {
+    debug: true,
+});
+
 const App = () => {
     const [resumeData, setResumeData] = useState({});
     const getResumeData = () => {
@@ -33,6 +35,7 @@ const App = () => {
 
     useEffect(() => {
         getResumeData();
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }, []);
 
     return (
@@ -48,7 +51,6 @@ const App = () => {
                     <CaretUpFilled />
                 </BackTop>
             </Layout>
-            <RouteChangeTracker />
         </React.StrictMode>
     );
 };
