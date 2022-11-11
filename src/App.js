@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
+import ReactGA from 'react-ga';
 import Header from './Components/Header';
 import About from './Components/About';
 import Resume from './Components/Resume';
@@ -9,6 +10,11 @@ import { CaretUpFilled } from '@ant-design/icons';
 
 import { BackTop, Layout } from 'antd';
 import Portfolio from './Components/Portfolio';
+
+const TRACKING_ID = "G-YNBRX2WRRW"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID, {
+    debug: true,
+});
 
 const App = () => {
     const [resumeData, setResumeData] = useState({});
@@ -29,6 +35,7 @@ const App = () => {
 
     useEffect(() => {
         getResumeData();
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }, []);
 
     return (
