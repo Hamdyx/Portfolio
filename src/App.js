@@ -12,9 +12,7 @@ import { BackTop, Layout } from 'antd';
 import Portfolio from './Components/Portfolio';
 
 const TRACKING_ID = "G-YNBRX2WRRW"; // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID, {
-    debug: true,
-});
+ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
     const [resumeData, setResumeData] = useState({});
