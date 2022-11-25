@@ -47,7 +47,7 @@ const ProjectModal = ({ project }) => {
                 footer={null}
             >
                 <Image src={projectImage} alt={title} width="75%" height="50%" />
-                <a href={url}>{url}</a>
+                <a href={url} target="_blank" rel='noreferrer'>{url}</a>
                 <p>{details}</p>
             </Modal>
         </div>

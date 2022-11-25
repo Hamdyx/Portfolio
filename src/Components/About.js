@@ -40,7 +40,7 @@ const About = ({ data }) => {
                                 <span>{email}</span>
                             </p>
                         </div>
-                        <a href={resumeDownload} className="button-liquid">
+                        <a href={resumeDownload} className="button-liquid" target="_blank" rel='noreferrer'>
                             <span>Resume</span>
                             <div className="liquid"></div>
                         </a>

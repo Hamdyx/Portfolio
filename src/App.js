@@ -32,7 +32,7 @@ const App = () => {
 
     useEffect(() => {
         getResumeData();
-        ReactGA.pageview(window.location.pathname + window.location.search);
+        ReactGA.send('pageview')
     }, []);
 
     return (
@@ -45,7 +45,9 @@ const App = () => {
                 {resumeData?.main && <Contact data={resumeData.main} />}
                 {resumeData?.main && <Footer data={resumeData.main} />}
                 <BackTop>
-                    <CaretUpFilled />
+                    <a href="#home" aria-label="scroll-up">
+                        <CaretUpFilled />
+                    </a>
                 </BackTop>
             </Layout>
         </React.StrictMode>

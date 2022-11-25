@@ -7,7 +7,7 @@ const SocialLinks = ({ socials }) => {
 
         return (
             <li key={network.name}>
-                <a href={network.url} aria-label={network.name}>
+                <a href={network.url} aria-label={network.name} target="_blank" rel='noreferrer'>
                     <IconEl />
                 </a>
             </li>
