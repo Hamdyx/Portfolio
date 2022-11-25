@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
-import ReactGA from 'react-ga';
+import { BackTop, Layout } from 'antd';
+import { CaretUpFilled } from '@ant-design/icons';
+import ReactGA from 'react-ga4';
 import Header from './Components/Header';
 import About from './Components/About';
 import Resume from './Components/Resume';
+import Portfolio from './Components/Portfolio';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-import { CaretUpFilled } from '@ant-design/icons';
 
-import { BackTop, Layout } from 'antd';
-import Portfolio from './Components/Portfolio';
-
-const TRACKING_ID = "G-YNBRX2WRRW"; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = "G-YNBRX2WRRW";
 ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
@@ -33,7 +32,7 @@ const App = () => {
 
     useEffect(() => {
         getResumeData();
-        ReactGA.pageview(window.location.pathname + window.location.search);
+        ReactGA.send('pageview')
     }, []);
 
     return (
@@ -46,7 +45,9 @@ const App = () => {
                 {resumeData?.main && <Contact data={resumeData.main} />}
                 {resumeData?.main && <Footer data={resumeData.main} />}
                 <BackTop>
-                    <CaretUpFilled />
+                    <a href="#home" aria-label="scroll-up">
+                        <CaretUpFilled />
+                    </a>
                 </BackTop>
             </Layout>
         </React.StrictMode>
