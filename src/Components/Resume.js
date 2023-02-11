@@ -3,14 +3,15 @@ import React from 'react';
 import Icons from '../assets/icons.ts';
 
 const Resume = ({ data }) => {
-    const { skillmessage, education, work, skills } = data
+    const { skillmessage, education, work, skills } = data;
     const educationItems = education.map((education) => {
         return (
-            <Space key={education.school} direction='vertical' size={5}>
+            <Space key={education.school} direction="vertical" size={5}>
                 <h2>{education.school}</h2>
                 <p className="info">
-                    {education.degree} <span>&bull;</span>
-                    <em className="date">{education.graduated}</em>
+                    {education.degree}
+                    {/* <span>&bull;</span> */}
+                    {/* <em className="date">{education.graduated}</em> */}
                 </p>
                 <p className="details">{education.description}</p>
             </Space>
@@ -20,7 +21,7 @@ const Resume = ({ data }) => {
     const workItems = work.map((work) => {
         const { company, title, years, description } = work;
         return (
-            <Space key={company} direction='vertical' size={5}>
+            <Space key={company} direction="vertical" size={5}>
                 <h2>{title}</h2>
                 <p className="info">
                     {company}
@@ -45,19 +46,11 @@ const Resume = ({ data }) => {
 
     return (
         <section id="resume">
-            <ResumeItem title='Education'>
-                {educationItems}
-            </ResumeItem>
-            <ResumeItem title='Work'>
-                {workItems}
-            </ResumeItem>
+            <ResumeItem title="Education">{educationItems}</ResumeItem>
+            <ResumeItem title="Work">{workItems}</ResumeItem>
             <ResumeItem title="Skills">
-                <p className="details">
-                    {skillmessage}
-                </p>
-                <ul className="skills">
-                    {skillsItems}
-                </ul>
+                <p className="details">{skillmessage}</p>
+                <ul className="skills">{skillsItems}</ul>
             </ResumeItem>
         </section>
     );
@@ -65,17 +58,17 @@ const Resume = ({ data }) => {
 
 const ResumeItem = ({ title, children }) => {
     return (
-        <Space direction='vertical' size={15} className='resume_item'>
+        <Space direction="vertical" size={15} className="resume_item">
             <Divider orientation="left">
                 <h1>
                     <span>{title}</span>
                 </h1>
             </Divider>
-            <Space direction='vertical' size={10}>
+            <Space direction="vertical" size={10}>
                 {children}
             </Space>
         </Space>
     );
-}
+};
 
 export default Resume;

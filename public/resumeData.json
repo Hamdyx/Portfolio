@@ -3,7 +3,7 @@
         "name": "Ahmed Hamdy",
         "description": "Javascript Developer",
         "image": "profilePic.webp",
-        "bio": "Passionate Javascript developer with over 3 years of front-end experience building responsive web apps using React, Redux and Bootstrap, in addition to 1 year of web development experience using MERN stack.",
+        "bio": "Experienced Javascript Developer with over 4 years of front-end development experience using HTML, CSS, JS, Bootstrap, React, and Redux. Passionate about web development with over 1 year of experience using the MERN stack.",
         "contactmessage": "Let's get in touch if you want to implement something or just want to DEDUCK",
         "email": "a.hamdy.nig@gmail.com",
         "phone": "01116535636",
@@ -38,39 +38,38 @@
         ]
     },
     "resume": {
-        "skillmessage": "Very comfortable working with Javascript, React.js, Express.js and Bootstrap, also sharpening my skills with MongoDB, Node.js, Blockchain and python",
+        "skillmessage": "Very comfortable working with Javascript, React.js, Redux.js, Express.js and Bootstrap, also sharpening my skills with MongoDB, Node.js, Blockchain and python",
         "education": [
             {
                 "school": "British University In Egypt",
                 "degree": "Bachelor in Computer Science",
-                "graduated": "2020",
-                "description": "Gathered strong knowledge about OOP and databases, also ranked first in the class of problem solving during year one"
+                "description": "Gathered strong knowledge about OOP and databases and also ranked first in the class in problem solving during year one."
             }
         ],
         "work": [
             {
+                "company": "RasMal",
+                "title": "Frontend Engineer",
+                "years": "Nov 2022 - Present",
+                "description": "Optimized routing by implementing protected and permissions routes; also used lazy loading to reduce bundle size by 60%."
+            },
+            {
                 "company": "Taqneen Solutions",
-                "title": "Senior Front-End Developer",
-                "years": "Jul 2022 - Present",
-                "description": "Developed different flows and maintained existing features and forms while refactoring code to follow clean code principles"
+                "title": "Senior Frontend Developer",
+                "years": "Jul 2022 - Nov 2022",
+                "description": "Collaborated with backend and devops engineers for the release of new features and API endpoints to make available to frontend clients."
             },
             {
                 "company": "Uniparticle",
-                "title": "Junior Front-End Developer",
-                "years": "Apr 2022 - Jul 2022",
-                "description": "Worked in an agile environment, with weekly meetings and sprint planning. Developed various projects from UI designs to React"
+                "title": "Frontend Developer",
+                "years": "Mar 2022 - Jul 2022",
+                "description": "Worked with senior developers to rebuild Aman Microfinance's old wordpress website in TypeScript, React, Redux, and SCSS."
             },
             {
-                "company": "Remote",
-                "title": "Freelance Front-End Developer",
-                "years": "Jul 2020 - Apr 2022",
-                "description": "Developed various templates and landing pages and new features based on functional specifications "
-            },
-            {
-                "company": "Right-Click Media",
-                "title": "Junior Front-End Developer",
-                "years": "Jan 2020 - June 2020",
-                "description": "Improved site performance by optimizing images and reducing requests when possible"
+                "company": "Freelance",
+                "title": "Javascript Developer",
+                "years": "Apr 2019 - Mar 2022",
+                "description": "Developed various templates, landing pages, and new features based on functional specifications."
             }
         ],
         "skills": [
