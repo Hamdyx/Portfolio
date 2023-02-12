@@ -17,7 +17,7 @@ const Header = ({ data }) => {
                     <SocialLinks socials={social} />
                 </div>
             </div>
-            <a href="#contact" aria-label="scroll-down" className="scrolldown">
+            <a href="#portfolio" aria-label="scroll-down" className="scrolldown">
                 <CaretDownOutlined />
             </a>
         </section>

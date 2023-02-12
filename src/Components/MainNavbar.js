@@ -2,7 +2,13 @@ import React from 'react';
 import { Menu } from 'antd';
 
 const MainNavbar = () => {
-    const routes = ['home', 'about', 'resume', 'portfolio', 'contact'];
+    const routes = [
+        'home',
+        'about',
+        'resume',
+        'portfolio',
+        //  'contact'
+    ];
     const navBtns = routes.map((route) => NavBtn(route));
 
     return (

@@ -8,7 +8,7 @@ import Header from './Components/Header';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Portfolio from './Components/Portfolio';
-import Contact from './Components/Contact';
+// import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 
 const { Header: AntdHeader, Content } = Layout;
@@ -49,7 +49,7 @@ const App = () => {
                     {resumeData?.main && <About data={resumeData.main} />}
                     {resumeData?.resume && <Resume data={resumeData.resume} />}
                     {resumeData?.portfolio && <Portfolio data={resumeData.portfolio} />}
-                    {resumeData?.main && <Contact data={resumeData.main} />}
+                    {/* {resumeData?.main && <Contact data={resumeData.main} />} */}
                 </Content>
                 {resumeData?.main && <Footer data={resumeData.main} />}
                 <BackTop>
