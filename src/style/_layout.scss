@@ -1,8 +1,10 @@
 body {
     background: #0f0f0f;
 }
-.layout {
+.ant-layout {
     background: transparent;
+}
+.ant-layout-content {
     & > section {
         padding: 6rem 10rem;
         @media (max-width: 992px) {

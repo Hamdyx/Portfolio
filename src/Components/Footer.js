@@ -1,12 +1,14 @@
 import React from 'react';
 import SocialLinks from './SocialLinks';
+import { Layout } from 'antd';
+const { Footer } = Layout;
 
-const Footer = ({ data }) => {
+const MainFooter = ({ data }) => {
     return (
-        <footer>
+        <Footer style={{ textAlign: 'center' }}>
             <SocialLinks socials={data.social} />
-        </footer>
+        </Footer>
     );
-}
+};
 
-export default Footer;
+export default MainFooter;
