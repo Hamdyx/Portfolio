@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import $ from 'jquery';
 import { BackTop, Layout } from 'antd';
 import { CaretUpFilled } from '@ant-design/icons';
 import ReactGA from 'react-ga4';
@@ -17,20 +16,11 @@ const TRACKING_ID = 'G-YNBRX2WRRW';
 ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
-    const [resumeData, setResumeData] = useState({});
+    const [resumeData, setResumeData] = useState<any>({});
     const getResumeData = () => {
-        $.ajax({
-            url: './resumeData.json',
-            dataType: 'json',
-            cache: false,
-            success: function (data) {
-                setResumeData(data);
-            },
-            error: (xhr, status, err) => {
-                console.log(err);
-                alert(err);
-            },
-        });
+        fetch('./resumeData.json')
+            .then((res) => res.json())
+            .then((data) => setResumeData(data));
     };
 
     useEffect(() => {
