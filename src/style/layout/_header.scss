@@ -7,6 +7,9 @@
         height: 90px;
         inset: 0;
         z-index: 1;
+        @media (max-width: 768px) {
+            height: 70px;
+        }
         &.opaque {
             background: #33333373;
             box-shadow: 0 2px 32px 0 $baseOrange;
@@ -25,14 +28,15 @@
         }
         ul#nav {
             height: 100%;
-            padding: 0.5rem 0;
-            align-items: baseline;
+            padding: 12px 0 8px;
+            gap: 10px;
+            @media (max-width: 768px) {
+                gap: 6px;
+            }
             li {
                 background: none;
                 list-style: none;
-                @media (max-width: 992px) {
-                    padding: 0 10px;
-                }
+                padding: 0;
                 .ant-menu-title-content {
                     .nav-btn {
                         color: #fff;
