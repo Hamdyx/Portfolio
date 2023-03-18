@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { StrictMode, useEffect, useState } from 'react';
 import { BackTop, Layout } from 'antd';
 import { CaretUpFilled } from '@ant-design/icons';
 import ReactGA from 'react-ga4';
@@ -7,7 +7,6 @@ import Header from './Components/Header';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Portfolio from './Components/Portfolio';
-// import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 
 const { Header: AntdHeader, Content } = Layout;
@@ -29,7 +28,7 @@ const App = () => {
     }, []);
 
     return (
-        <React.StrictMode>
+        <StrictMode>
             <Layout>
                 <AntdHeader className="header_main">
                     <MainNavbar />
@@ -38,17 +37,20 @@ const App = () => {
                 <Content>
                     {resumeData?.main && <About data={resumeData.main} />}
                     {resumeData?.resume && <Resume data={resumeData.resume} />}
-                    {resumeData?.portfolio && <Portfolio data={resumeData.portfolio} />}
-                    {/* {resumeData?.main && <Contact data={resumeData.main} />} */}
+                    {resumeData?.portfolio && (
+                        <Portfolio projects={resumeData.portfolio.projects} />
+                    )}
                 </Content>
-                {resumeData?.main && <Footer data={resumeData.main} />}
+                {resumeData?.main?.social && (
+                    <Footer socialLinks={resumeData.main.social} />
+                )}
                 <BackTop>
                     <a href="#home" aria-label="scroll-up">
                         <CaretUpFilled />
                     </a>
                 </BackTop>
             </Layout>
-        </React.StrictMode>
+        </StrictMode>
     );
 };
 

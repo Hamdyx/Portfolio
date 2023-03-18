@@ -1,9 +1,9 @@
-import React from 'react';
 import ParticlesBg from 'particles-bg';
 import { CaretDownOutlined } from '@ant-design/icons';
+import { MainProps } from '../types';
 import SocialLinks from './SocialLinks';
 
-const Header = ({ data }) => {
+function Header({ data }: { data: MainProps }) {
     const { name, description, social } = data;
 
     return (
@@ -22,6 +22,6 @@ const Header = ({ data }) => {
             </a>
         </section>
     );
-};
+}
 
 export default Header;

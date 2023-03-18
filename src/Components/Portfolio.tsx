@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Card, Image, Modal } from 'antd';
+import { Project } from '../types';
 const { Meta } = Card;
 
-const Portfolio = ({ data }) => {
-    const projectsDev = data.projects.map((project, i) => {
+const Portfolio = ({ projects }: { projects: Project[] }) => {
+    const projectsDev = projects.map((project, i) => {
         return <ProjectModal key={i} project={project} />;
     });
-
     return (
         <section id="portfolio">
             <div className="portfolio_container animate__animated animate__fadeInLeft">
@@ -15,9 +15,9 @@ const Portfolio = ({ data }) => {
             </div>
         </section>
     );
-}
+};
 
-const ProjectModal = ({ project }) => {
+const ProjectModal = ({ project }: { project: Project }) => {
     const [show, setShow] = useState(false);
     const { title, details, url, image } = project;
     let projectImage = 'images/portfolio/' + image;
@@ -31,7 +31,14 @@ const ProjectModal = ({ project }) => {
             <span></span>
             <Card
                 hoverable
-                cover={<Image alt={title} src={projectImage} className="portfolioImg-btn" preview={false} />}
+                cover={
+                    <Image
+                        alt={title}
+                        src={projectImage}
+                        className="portfolioImg-btn"
+                        preview={false}
+                    />
+                }
                 className="item-wrap"
                 onClick={handleModalShow}
             >
@@ -47,7 +54,9 @@ const ProjectModal = ({ project }) => {
                 footer={null}
             >
                 <Image src={projectImage} alt={title} width="75%" height="50%" />
-                <a href={url} target="_blank" rel='noreferrer'>{url}</a>
+                <a href={url} target="_blank" rel="noreferrer">
+                    {url}
+                </a>
                 <p>{details}</p>
             </Modal>
         </div>

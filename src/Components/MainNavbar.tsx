@@ -1,4 +1,3 @@
-import React from 'react';
 import { Menu } from 'antd';
 
 const MainNavbar = () => {
@@ -26,7 +25,7 @@ const MainNavbar = () => {
     );
 };
 
-const NavBtn = (route) => {
+const NavBtn = (route: string) => {
     return {
         key: route,
         label: (
