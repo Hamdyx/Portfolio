@@ -1,10 +1,16 @@
 import ParticlesBg from 'particles-bg';
 import { CaretDownOutlined } from '@ant-design/icons';
-import { MainProps } from '../types';
+import { Social } from '../types';
 import SocialLinks from './SocialLinks';
 
-function Header({ data }: { data: MainProps }) {
-    const { name, description, social } = data;
+function Header({ info }: { info: { name: string; title: string; socials: Social[] } }) {
+    const { name, title, socials } = info;
+    console.log({
+        info,
+        name,
+        title,
+        socials,
+    });
 
     return (
         <section id="home">
@@ -12,9 +18,9 @@ function Header({ data }: { data: MainProps }) {
             <div className="row banner">
                 <div className="banner-text">
                     <h1>{name}</h1>
-                    <h2>{description}.</h2>
+                    <h2>{title}.</h2>
                     <hr />
-                    <SocialLinks socials={social} />
+                    <SocialLinks socials={socials} />
                 </div>
             </div>
             <a href="#portfolio" aria-label="scroll-down" className="scrolldown">

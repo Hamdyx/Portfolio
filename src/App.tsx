@@ -26,13 +26,22 @@ const App = () => {
         getResumeData();
         ReactGA.send('pageview');
     }, []);
+    console.log({ resumeData });
 
     return (
         <StrictMode>
             <Layout>
                 <AntdHeader className="header_main">
                     <MainNavbar />
-                    {resumeData?.main && <Header data={resumeData.main} />}
+                    {resumeData?.main && (
+                        <Header
+                            info={{
+                                name: resumeData.main.name,
+                                title: resumeData.main.title,
+                                socials: resumeData.social,
+                            }}
+                        />
+                    )}
                 </AntdHeader>
                 <Content>
                     {resumeData?.main && <About data={resumeData.main} />}
@@ -41,9 +50,7 @@ const App = () => {
                         <Portfolio projects={resumeData.portfolio.projects} />
                     )}
                 </Content>
-                {resumeData?.main?.social && (
-                    <Footer socialLinks={resumeData.main.social} />
-                )}
+                {resumeData?.social && <Footer socialLinks={resumeData.social} />}
                 <BackTop>
                     <a href="#home" aria-label="scroll-up">
                         <CaretUpFilled />

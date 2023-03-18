@@ -35,7 +35,7 @@ export type MainProps = {
     address: Address;
     bio: string;
     contactmessage: string;
-    description: string;
+    title: string;
     email: string;
     github: string;
     image: string;

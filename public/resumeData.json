@@ -1,7 +1,7 @@
 {
     "main": {
         "name": "Ahmed Hamdy",
-        "description": "Javascript Developer",
+        "title": "Javascript Developer",
         "image": "profilePic.webp",
         "bio": "Experienced Javascript Developer with over 4 years of front-end development experience using HTML, CSS, JS, Bootstrap, React, and Redux. Passionate about web development with over 1 year of experience using the MERN stack.",
         "contactmessage": "Let's get in touch if you want to implement something or just want to DEDUCK",
@@ -17,26 +17,26 @@
             "zip": "(Your Zip/Postal Code)"
         },
         "website": "http://www.timbakerdev.com",
-        "resumedownload": "myCV.pdf",
-        "social": [
-            {
-                "name": "facebook",
-                "url": "https://facebook.com/a.hamdy.jsx"
-            },
-            {
-                "name": "twitter",
-                "url": "https://twitter.com/ma_niguh"
-            },
-            {
-                "name": "linkedin",
-                "url": "https://www.linkedin.com/in/hamdyx/"
-            },
-            {
-                "name": "github",
-                "url": "https://github.com/Hamdyx"
-            }
-        ]
+        "resumedownload": "myCV.pdf"
     },
+    "social": [
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/a.hamdy.jsx"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ma_niguh"
+        },
+        {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/hamdyx/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Hamdyx"
+        }
+    ],
     "resume": {
         "skillmessage": "Very comfortable working with Javascript, React.js, Redux.js, Express.js and Bootstrap, also sharpening my skills with MongoDB, Node.js, Blockchain and python",
         "education": [
