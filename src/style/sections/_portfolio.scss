@@ -99,16 +99,36 @@
         }
     }
 }
-.project_modal {
-    .ant-modal-content {
-        height: 100%;
-        .ant-modal-body {
+.ant-modal-root {
+    .ant-modal-mask {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(5px);
+        opacity: 0.85;
+    }
+    .project_modal {
+        .ant-modal-content {
             height: 100%;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-width: 290px;
+            .ant-modal-header {
+                .ant-modal-title {
+                    a {
+                        color: #343a40;
+                        font-weight: 800;
+                        &:hover {
+                            color: #fe6928;
+                        }
+                    }
+                }
+            }
+            .ant-modal-body {
+                height: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-width: 290px;
+            }
         }
     }
 }

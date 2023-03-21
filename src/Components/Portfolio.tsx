@@ -45,18 +45,22 @@ const ProjectModal = ({ project }: { project: Project }) => {
                 <Meta title={title} />
             </Card>
             <Modal
-                title={title}
+                title={
+                    <a href={url} target="_blank" rel="noreferrer">
+                        {title}
+                    </a>
+                }
                 centered
                 open={show}
                 onOk={handleModalShow}
                 onCancel={handleModalClose}
                 className="project_modal"
                 footer={null}
+                maskStyle={{
+                    backgroundImage: `url(${projectImage})`,
+                }}
             >
                 <Image src={projectImage} alt={title} width="75%" height="50%" />
-                <a href={url} target="_blank" rel="noreferrer">
-                    {url}
-                </a>
                 <p>{details}</p>
             </Modal>
         </div>
