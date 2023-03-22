@@ -100,17 +100,14 @@
     }
 }
 .ant-modal-root {
-    .ant-modal-mask {
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        backdrop-filter: blur(5px);
-        opacity: 0.85;
-    }
+    border-radius: 12px;
     .project_modal {
+        border-radius: 8px;
         .ant-modal-content {
+            border-radius: 8px;
             height: 100%;
             .ant-modal-header {
+                border-radius: 8px;
                 .ant-modal-title {
                     a {
                         color: #343a40;
@@ -127,7 +124,15 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                gap: 20px;
                 min-width: 290px;
+                padding: 0 0 24px;
+                .ant-image {
+                    width: 100%;
+                }
+                p {
+                    padding: 0 24px;
+                }
             }
         }
     }

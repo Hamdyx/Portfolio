@@ -56,11 +56,8 @@ const ProjectModal = ({ project }: { project: Project }) => {
                 onCancel={handleModalClose}
                 className="project_modal"
                 footer={null}
-                maskStyle={{
-                    backgroundImage: `url(${projectImage})`,
-                }}
             >
-                <Image src={projectImage} alt={title} width="75%" height="50%" />
+                <Image src={projectImage} alt={title} width="100%" height="50%" />
                 <p>{details}</p>
             </Modal>
         </div>
