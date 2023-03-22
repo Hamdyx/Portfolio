@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Card, Image, Modal } from 'antd';
 import { Project } from '../types';
+import Icons from '../assets/icons';
 const { Meta } = Card;
 
 const Portfolio = ({ projects }: { projects: Project[] }) => {
@@ -19,8 +20,11 @@ const Portfolio = ({ projects }: { projects: Project[] }) => {
 
 const ProjectModal = ({ project }: { project: Project }) => {
     const [show, setShow] = useState(false);
-    const { title, details, url, image } = project;
+    const { title, details, url, github, image } = project;
     let projectImage = 'images/portfolio/' + image;
+
+    const GithubIcon = (Icons as any)['github'];
+    const WebsiteIcon = (Icons as any)['link'];
 
     const handleModalShow = () => setShow(true);
 
@@ -46,7 +50,7 @@ const ProjectModal = ({ project }: { project: Project }) => {
             </Card>
             <Modal
                 title={
-                    <a href={url} target="_blank" rel="noreferrer">
+                    <a href={url || github} target="_blank" rel="noreferrer">
                         {title}
                     </a>
                 }
@@ -56,7 +60,30 @@ const ProjectModal = ({ project }: { project: Project }) => {
                 onCancel={handleModalClose}
                 className="project_modal"
                 width={1000}
-                footer={null}
+                footer={
+                    <>
+                        {url && (
+                            <a
+                                href={url}
+                                aria-label="website"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <WebsiteIcon />
+                            </a>
+                        )}
+                        {github && (
+                            <a
+                                href={github}
+                                aria-label="github"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <GithubIcon />
+                            </a>
+                        )}
+                    </>
+                }
             >
                 <Image
                     src={projectImage}

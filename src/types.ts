@@ -21,6 +21,7 @@ export type Project = {
     title: string;
     image: string;
     details: string;
+    github: string;
     url: string;
 };
 

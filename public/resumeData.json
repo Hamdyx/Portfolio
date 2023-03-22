@@ -114,49 +114,51 @@
                 "title": "To Do List",
                 "details": "(offline now) To-do-list App for tracking tasks and sorting them in categories",
                 "image": "portfolio-1.webp",
-                "url": "https://github.com/Hamdyx/DailyTasks"
+                "github": "https://github.com/Hamdyx/DailyTasks"
             },
             {
                 "title": "Budgety",
                 "details": "(offline now) A budget management app",
                 "image": "portfolio-2.webp",
-                "url": "https://github.com/Hamdyx/Budgety"
+                "github": "https://github.com/Hamdyx/Budgety"
             },
             {
                 "title": "Weather-App",
                 "details": "(offline now) A Weather-App implemented in react.js, node.js and used chaka UI for styles",
                 "image": "portfolio-3.webp",
-                "url": "https://github.com/Hamdyx/Weather-App"
+                "github": "https://github.com/Hamdyx/Weather-App",
+                "url": "https://weather-app-hamdyx.vercel.app"
             },
             {
                 "title": "Aman Microfinance",
                 "details": "Aman company one of the top microfinance service providers in Egypt",
                 "image": "portfolio-4.webp",
-                "url": "https://amanmicrofinance.com/"
+                "url": "https://amanmicrofinance.com"
             },
             {
                 "title": "HG Group",
                 "details": "HG Group supplies the market with high quality and reliable supplies including feeds, day-old chicks (parent stock, commercial layer, and commercial broiler), veterinarian medicine, hatcheries, farm equipment, and much more",
                 "image": "portfolio-5.webp",
-                "url": "https://www.hg-egypt.com/"
+                "url": "https://www.hg-egypt.com"
             },
             {
                 "title": "Dyafat",
                 "details": "Dyafat brings a modern and comfortable reservation experience",
                 "image": "portfolio-6.webp",
-                "url": "https://dev-new.dyafat.com/"
+                "url": "https://dev-new.dyafat.com"
             },
             {
                 "title": "Encryption",
                 "details": "Generate random passwords and encrypt them using cipher encryption with different keys",
                 "image": "portfolio-7.webp",
-                "url": "https://hamdyx-encryption.netlify.app/"
+                "github": "https://github.com/Hamdyx/Encryption",
+                "url": "https://hamdyx-encryption.netlify.app"
             },
             {
                 "title": "RasMal",
                 "details": "The all-in-one platform to automate equity management, facilitate fundraising and enhance governance to a simple click process for every company!",
                 "image": "portfolio-8.webp",
-                "url": "https://www.rasmal.io/"
+                "url": "https://www.rasmal.io"
             }
         ]
     }
