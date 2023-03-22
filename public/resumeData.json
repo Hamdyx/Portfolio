@@ -151,6 +151,12 @@
                 "details": "Generate random passwords and encrypt them using cipher encryption with different keys",
                 "image": "portfolio-7.webp",
                 "url": "https://hamdyx-encryption.netlify.app/"
+            },
+            {
+                "title": "RasMal",
+                "details": "The all-in-one platform to automate equity management, facilitate fundraising and enhance governance to a simple click process for every company!",
+                "image": "portfolio-8.webp",
+                "url": "https://www.rasmal.io/"
             }
         ]
     }

@@ -55,9 +55,16 @@ const ProjectModal = ({ project }: { project: Project }) => {
                 onOk={handleModalShow}
                 onCancel={handleModalClose}
                 className="project_modal"
+                width={1000}
                 footer={null}
             >
-                <Image src={projectImage} alt={title} width="100%" height="50%" />
+                <Image
+                    src={projectImage}
+                    alt={title}
+                    width="100%"
+                    height="50%"
+                    preview={false}
+                />
                 <p>{details}</p>
             </Modal>
         </div>
