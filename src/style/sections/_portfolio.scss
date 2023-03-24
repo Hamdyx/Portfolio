@@ -99,16 +99,53 @@
         }
     }
 }
-.project_modal {
-    .ant-modal-content {
-        height: 100%;
-        .ant-modal-body {
+.ant-modal-root {
+    border-radius: 12px;
+    .project_modal {
+        border-radius: 8px;
+        .ant-modal-content {
+            border-radius: 8px;
             height: 100%;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-width: 290px;
+            .ant-modal-header {
+                border-radius: 8px;
+                .ant-modal-title {
+                    a {
+                        color: $baseGrey;
+                        font-weight: 800;
+                        &:hover {
+                            color: $baseOrangeHovered;
+                        }
+                    }
+                }
+            }
+            .ant-modal-body {
+                height: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                min-width: 290px;
+                padding: 0 0 24px;
+                .ant-image {
+                    width: 100%;
+                }
+                p {
+                    padding: 0 24px;
+                }
+            }
+            .ant-modal-footer {
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+                a {
+                    font-size: 24px;
+                    color: #343a40;
+                    &:hover {
+                        color: $baseOrangeHovered;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 import { Avatar, Image, Space } from 'antd';
-import React from 'react';
+import { MainProps } from '../types';
 
-const About = ({ data }) => {
+function About({ data }: { data: MainProps }) {
     const { name, bio, phone, email, address } = data;
     const { country, city } = address;
     const profilepic = `images/${data.image}`;
@@ -13,13 +13,15 @@ const About = ({ data }) => {
                 <div>
                     <Avatar
                         size={{ xs: 100, sm: 140, md: 120, lg: 140, xl: 180, xxl: 200 }}
-                        icon={<Image
-                            width="100%"
-                            height="100%"
-                            src={profilepic}
-                            alt="Profile Pic"
-                            preview={false}
-                        />}
+                        icon={
+                            <Image
+                                width="100%"
+                                height="100%"
+                                src={profilepic}
+                                alt="Profile Pic"
+                                preview={false}
+                            />
+                        }
                     />
                 </div>
                 <Space direction="vertical" size={30}>
@@ -40,7 +42,12 @@ const About = ({ data }) => {
                                 <span>{email}</span>
                             </p>
                         </div>
-                        <a href={resumeDownload} className="button-liquid" target="_blank" rel='noreferrer'>
+                        <a
+                            href={resumeDownload}
+                            className="button-liquid"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <span>Resume</span>
                             <div className="liquid"></div>
                         </a>
@@ -49,6 +56,6 @@ const About = ({ data }) => {
             </Space>
         </section>
     );
-};
+}
 
 export default About;

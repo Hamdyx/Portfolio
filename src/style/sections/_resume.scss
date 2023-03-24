@@ -15,14 +15,20 @@
         }
     }
     h1 {
-        font: 18px/24px 'opensans-bold', sans-serif;
+        font: 20px 'opensans-bold', sans-serif;
         text-transform: uppercase;
         letter-spacing: 1px;
         border-bottom: 3px solid #0762f9;
+        @media (max-width: 576px) {
+            font-size: 18px;
+        }
     }
     h3,
     h2 {
-        font: 25px/30px 'opensans-bold', sans-serif;
+        font: 24px 'opensans-bold', sans-serif;
+        @media (max-width: 576px) {
+            font-size: 20px;
+        }
     }
     .resume_item {
         &:hover {
@@ -30,13 +36,19 @@
             animation: pulse 2s;
         }
         .info {
-            font: 16px/24px 'librebaskerville-italic', serif;
+            font: 16px 'librebaskerville-italic', serif;
             color: #6e7881;
+            @media (max-width: 576px) {
+                font-size: 14px;
+            }
             span {
                 margin-inline: 5px;
             }
             .date {
-                font: 15px/24px 'opensans-regular', sans-serif;
+                font: 14px 'opensans-regular', sans-serif;
+                @media (max-width: 576px) {
+                    font-size: 12px;
+                }
             }
         }
         .details {

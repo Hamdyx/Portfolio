@@ -11,6 +11,8 @@ import {
     SiSass,
 } from 'react-icons/si';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { LinkOutlined } from '@ant-design/icons';
+
 import { Python } from './svgs/svgs';
 
 const Icons = {
@@ -29,6 +31,7 @@ const Icons = {
     twitter: FaTwitter,
     linkedin: FaLinkedinIn,
     github: FaGithub,
+    link: LinkOutlined,
 };
 
 export default Icons;

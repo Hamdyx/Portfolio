@@ -83,7 +83,11 @@ a:hover .liquid {
     transition: color 0.2s ease-in-out;
     @media (max-width: 768px) {
         padding: 8px 14px;
-        font-size: 14px;
+        font-size: 12px;
+    }
+    @media (max-width: 576px) {
+        padding: 6px 14px;
+        font-size: 10px;
     }
     &:active {
         background-color: transparent !important;

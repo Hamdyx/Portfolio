@@ -1,132 +1,140 @@
-header {
-    &#home {
-        background: none;
-        position: relative;
-        min-height: 500px;
-        width: 100%;
-        text-align: center;
-        overflow: hidden;
-        &:before {
-            content: '';
-            display: inline-block;
-            vertical-align: middle;
-            height: 100%;
+.header_main {
+    background: transparent;
+    display: flex;
+    padding: 0;
+    #nav-wrap {
+        position: fixed;
+        height: 90px;
+        inset: 0;
+        z-index: 1;
+        @media (max-width: 768px) {
+            height: 70px;
         }
-        /* primary navigation
-        --------------------------------------------------------------------- */
-        #nav-wrap {
-            position: fixed;
-            height: 90px;
-            inset: 0;
-            &.opaque {
-                background: #33333373;
-                box-shadow: 0 2px 32px 0 $baseOrange;
-                backdrop-filter: blur(5px);
-                z-index: 100;
-            }
-            .ant-menu {
-                flex: 1;
-                justify-content: center;
-                background: none;
-                .ant-menu-item {
-                    &:hover {
-                        background: none;
-                    }
+        &.opaque {
+            background: #33333373;
+            box-shadow: 0 2px 32px 0 $baseOrange;
+            backdrop-filter: blur(5px);
+            z-index: 100;
+        }
+        .ant-menu {
+            flex: 1;
+            justify-content: center;
+            background: none;
+            .ant-menu-item {
+                &:hover {
+                    background: none;
                 }
             }
-            ul#nav {
-                height: 100%;
-                padding: 0.5rem 0;
-                align-items: baseline;
-                li {
-                    background: none;
-                    list-style: none;
-                    @media (max-width: 992px) {
-                        padding: 0 10px;
-                    }
-                    .ant-menu-title-content {
-                        .nav-btn {
-                            color: #fff;
-                            &:hover {
-                                color: $baseOrange;
-                            }
-                        }
-                    }
-                    &.current {
-                        a {
+        }
+        ul#nav {
+            height: 100%;
+            padding: 12px 0 8px;
+            gap: 10px;
+            @media (max-width: 768px) {
+                gap: 6px;
+            }
+            li {
+                background: none;
+                list-style: none;
+                padding: 0;
+                .ant-menu-title-content {
+                    .nav-btn {
+                        color: #fff;
+                        &:hover {
                             color: $baseOrange;
                         }
                     }
-                    &.ant-menu-overflow-item-rest {
-                        margin-bottom: 30px;
+                }
+                &.current {
+                    a {
+                        color: $baseOrange;
                     }
+                }
+                &.ant-menu-overflow-item-rest {
+                    margin-bottom: 30px;
                 }
             }
         }
-        .banner {
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0 auto;
-            padding-bottom: 30px;
+    }
+    section {
+        &#home {
+            background: none;
+            position: relative;
+            min-height: 500px;
+            width: 100%;
             text-align: center;
-            .banner-text {
-                width: 100%;
-                h1 {
-                    font: 90px/1.1em 'opensans-bold', sans-serif;
-                    color: #fff;
-                    letter-spacing: -2px;
-                    margin: 0 auto 18px auto;
-                    animation: fadeInDown 1.5s;
-                    @media (max-width: 768px) {
-                        font-size: 45px;
+            overflow: hidden;
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                height: 100%;
+            }
+            .banner {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 auto;
+                padding-bottom: 30px;
+                text-align: center;
+                .banner-text {
+                    width: 100%;
+                    h1 {
+                        font: 90px/1.1em 'opensans-bold', sans-serif;
+                        color: #fff;
+                        letter-spacing: -2px;
+                        margin: 0 auto 18px auto;
+                        animation: fadeInDown 1.5s;
+                        @media (max-width: 768px) {
+                            font-size: 45px;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: 40px;
+                        }
                     }
-                    @media (max-width: 768px) {
-                        font-size: 40px;
+                    h2 {
+                        font: 25px/2.15em 'librebaskerville-regular', serif;
+                        color: #ddd;
+                        margin: 0 auto;
+                        width: 80%;
+                        animation: fadeInDown 1.5s;
+                        @media (max-width: 768px) {
+                            font-size: 20px;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: 18px;
+                        }
                     }
-                }
-                h2 {
-                    font: 25px/2.15em 'librebaskerville-regular', serif;
-                    color: #ddd;
-                    margin: 0 auto;
-                    width: 70%;
-                    animation: fadeInDown 1.5s;
-                    @media (max-width: 768px) {
-                        font-size: 20px;
+                    h3 {
+                        color: #fff;
                     }
-                    @media (max-width: 768px) {
-                        font-size: 18px;
+                    hr {
+                        width: 60%;
+                        margin: 18px auto 24px auto;
+                        border-color: #2f2d2e;
                     }
-                }
-                h3 {
-                    color: #fff;
-                }
-                hr {
-                    width: 60%;
-                    margin: 18px auto 24px auto;
-                    border-color: #2f2d2e;
                 }
             }
-        }
 
-        a {
-            &.scrolldown {
-                position: absolute;
-                bottom: 30px;
-                left: 50%;
-                margin-left: -29px;
-                color: #fff;
-                display: block;
-                height: 42px;
-                width: 42px;
-                font-size: 42px;
-                line-height: 42px;
-                color: #fff;
-                border-radius: 100%;
-                transition: all 0.3s ease-in-out;
-                &:hover {
-                    color: #fe6928;
-                    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-                    animation-duration: 1s; /* don't forget to set a duration! */
+            a {
+                &.scrolldown {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    margin-left: -29px;
+                    color: #fff;
+                    display: block;
+                    height: 42px;
+                    width: 42px;
+                    font-size: 42px;
+                    line-height: 42px;
+                    color: #fff;
+                    border-radius: 100%;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: #fe6928;
+                        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+                        animation-duration: 1s; /* don't forget to set a duration! */
+                    }
                 }
             }
         }
