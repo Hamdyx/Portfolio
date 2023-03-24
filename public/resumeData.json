@@ -3,7 +3,7 @@
         "name": "Ahmed Hamdy",
         "title": "Javascript Developer",
         "image": "profilePic.webp",
-        "bio": "Experienced Javascript Developer with over 4 years of front-end development experience using HTML, CSS, JS, Bootstrap, React, and Redux. Passionate about web development with over 1 year of experience using the MERN stack.",
+        "bio": "Experienced Javascript developer with over 4 years of proven frontend development experience using various tools and libraries. Passionate about web development, performance, and scalability, with extensive experience with React, Redux, and Typescript.",
         "contactmessage": "Let's get in touch if you want to implement something or just want to DEDUCK",
         "email": "a.hamdy.nig@gmail.com",
         "phone": "01116535636",
@@ -112,19 +112,19 @@
         "projects": [
             {
                 "title": "To Do List",
-                "details": "(offline now) To-do-list App for tracking tasks and sorting them in categories",
+                "details": "To-do-list App for tracking tasks and sorting them in categories",
                 "image": "portfolio-1.webp",
                 "github": "https://github.com/Hamdyx/DailyTasks"
             },
             {
                 "title": "Budgety",
-                "details": "(offline now) A budget management app",
+                "details": "A budget management app",
                 "image": "portfolio-2.webp",
                 "github": "https://github.com/Hamdyx/Budgety"
             },
             {
                 "title": "Weather-App",
-                "details": "(offline now) A Weather-App implemented in react.js, node.js and used chaka UI for styles",
+                "details": "A Weather-App implemented in react.js, node.js and used chaka UI for styles",
                 "image": "portfolio-3.webp",
                 "github": "https://github.com/Hamdyx/Weather-App",
                 "url": "https://weather-app-hamdyx.vercel.app"
@@ -145,7 +145,7 @@
                 "title": "Dyafat",
                 "details": "Dyafat brings a modern and comfortable reservation experience",
                 "image": "portfolio-6.webp",
-                "url": "https://dev-new.dyafat.com"
+                "url": "https://dev.dyafat.com"
             },
             {
                 "title": "Encryption",

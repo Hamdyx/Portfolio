@@ -110,10 +110,10 @@
                 border-radius: 8px;
                 .ant-modal-title {
                     a {
-                        color: #343a40;
+                        color: $baseGrey;
                         font-weight: 800;
                         &:hover {
-                            color: #fe6928;
+                            color: $baseOrangeHovered;
                         }
                     }
                 }
@@ -141,6 +141,9 @@
                 a {
                     font-size: 24px;
                     color: #343a40;
+                    &:hover {
+                        color: $baseOrangeHovered;
+                    }
                 }
             }
         }
