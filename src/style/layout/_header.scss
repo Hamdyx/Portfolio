@@ -83,7 +83,19 @@
                         color: #fff;
                         letter-spacing: -2px;
                         margin: 0 auto 18px auto;
-                        animation: fadeInDown 1.5s;
+                        background: linear-gradient(
+                            to right,
+                            #fff 0%,
+                            $baseGrey 40%,
+                            $baseOrange 60%,
+                            $baseOrangeHovered 80%
+                        );
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-size: 250% auto;
+                        animation: fadeInDown 1.5s,
+                            animate-text 4s ease-in-out infinite alternate;
                         @media (max-width: 768px) {
                             font-size: 45px;
                         }
