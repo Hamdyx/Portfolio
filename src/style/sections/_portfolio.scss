@@ -70,12 +70,19 @@
                     box-shadow: 0 5px 15px #0000001a;
                     border-radius: 8px;
                     z-index: 1;
+                    @media (max-width: $breakpoint_xs) {
+                        width: 200px;
+                        height: 200px;
+                    }
                     .ant-card-cover {
                         position: relative;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         height: 225px;
+                        @media (max-width: $breakpoint_xs) {
+                            height: 200px;
+                        }
                         img {
                             object-fit: fill;
                             width: 100%;
@@ -86,6 +93,9 @@
                             border-radius: 8px;
                             transform: skewX(15deg);
                             transition: 0.5s;
+                            @media (max-width: $breakpoint_xs) {
+                                height: 200px;
+                            }
                             &:hover {
                                 transform: skewX(0deg) scaleX(1.3);
                             }
@@ -127,6 +137,9 @@
                 gap: 20px;
                 min-width: 290px;
                 padding: 0 0 24px;
+                @media (max-width: $breakpoint_xs) {
+                    min-width: 250px;
+                }
                 .ant-image {
                     width: 100%;
                 }

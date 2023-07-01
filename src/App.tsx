@@ -8,6 +8,7 @@ import About from './Components/About';
 import Resume from './Components/Resume';
 import Portfolio from './Components/Portfolio';
 import Footer from './Components/Footer';
+import { ResumeData } from './types';
 
 const { Header: AntdHeader, Content } = Layout;
 
@@ -15,7 +16,7 @@ const TRACKING_ID = 'G-YNBRX2WRRW';
 ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
-    const [resumeData, setResumeData] = useState<any>({});
+    const [resumeData, setResumeData] = useState<ResumeData>();
     const getResumeData = () => {
         fetch('./resumeData.json')
             .then((res) => res.json())
@@ -26,7 +27,6 @@ const App = () => {
         getResumeData();
         ReactGA.send('pageview');
     }, []);
-    console.log({ resumeData });
 
     return (
         <StrictMode>

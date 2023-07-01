@@ -16,7 +16,6 @@
             "state": "(Your State)",
             "zip": "(Your Zip/Postal Code)"
         },
-        "website": "http://www.timbakerdev.com",
         "resumedownload": "myCV.pdf"
     },
     "social": [
@@ -120,7 +119,8 @@
                 "title": "Budgety",
                 "details": "A budget management app",
                 "image": "portfolio-2.webp",
-                "github": "https://github.com/Hamdyx/Budgety"
+                "github": "https://github.com/Hamdyx/Budgety",
+                "url": "https://budgety-demo.vercel.app/"
             },
             {
                 "title": "Weather-App",
@@ -158,7 +158,15 @@
                 "title": "RasMal",
                 "details": "The all-in-one platform to automate equity management, facilitate fundraising and enhance governance to a simple click process for every company!",
                 "image": "portfolio-8.webp",
+                "github": "https://github.com/Rasmal-App",
                 "url": "https://www.rasmal.io"
+            },
+            {
+                "title": "NutPad",
+                "details": "Nutpad is a community driven accelerator and incubation platform connecting investors and early stage blockchain projects together.",
+                "image": "portfolio-9.webp",
+                "github": "https://github.com/orgs/Nutpad-Labs/repositories",
+                "url": "https://www.nutpad.fi/"
             }
         ]
     }

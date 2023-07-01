@@ -32,6 +32,13 @@ export type Work = {
     years: string;
 };
 
+export type ResumeData = {
+    main: MainProps;
+    social: Social[];
+    resume: ResumeProps;
+    portfolio: { projects: Project[] };
+};
+
 export type MainProps = {
     address: Address;
     bio: string;
@@ -46,6 +53,12 @@ export type MainProps = {
     resumedownload: string;
     social: Social[];
     website: string;
+};
+
+export type HeaderProps = {
+    name: string;
+    title: string;
+    socials: Social[];
 };
 
 export type ResumeProps = {

@@ -1,16 +1,10 @@
 import ParticlesBg from 'particles-bg';
 import { CaretDownOutlined } from '@ant-design/icons';
-import { Social } from '../types';
+import { HeaderProps } from '../types';
 import SocialLinks from './SocialLinks';
 
-function Header({ info }: { info: { name: string; title: string; socials: Social[] } }) {
+function Header({ info }: { info: HeaderProps }) {
     const { name, title, socials } = info;
-    console.log({
-        info,
-        name,
-        title,
-        socials,
-    });
 
     return (
         <section id="home">
